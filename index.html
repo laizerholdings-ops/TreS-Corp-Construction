@@ -1,0 +1,2249 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TreS Corp | Construction, Building &amp; Civil Engineering — Boksburg, Gauteng</title>
+  <meta
+    name="description"
+    content="TreS Corp delivers construction, building, civil engineering, renovations, and property development solutions in Vosloorus, Boksburg, Gauteng. Building Excellence. Engineering The Future."
+  />
+
+  <!-- Custom Architectural TC Favicon (SVG Data URI + Dynamic PNG Fallback) -->
+  <link
+    id="favicon-svg"
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23111317'/%3E%3Crect x='4' y='4' width='56' height='56' rx='7' fill='none' stroke='%23ea580c' stroke-width='2.5'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black, sans-serif' font-weight='900' font-size='26' fill='%23f97316' letter-spacing='1'%3ETC%3C/text%3E%3C/svg%3E"
+  />
+  <link id="favicon-png" rel="alternate icon" type="image/png" href="" />
+
+  <!-- Google Fonts: Montserrat & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    .font-display {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Subtle Architectural Blueprint Grid Overlay */
+    .bg-architectural-grid {
+      background-size: 56px 56px;
+      background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+
+    .bg-architectural-grid-day {
+      background-size: 56px 56px;
+      background-image:
+        linear-gradient(to right, rgba(15, 23, 42, 0.045) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(15, 23, 42, 0.045) 1px, transparent 1px);
+    }
+
+    /* Floating WhatsApp Gentle Animation */
+    @keyframes floatGentle {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-6px);
+      }
+    }
+    .animate-float-gentle {
+      animation: floatGentle 3.8s ease-in-out infinite;
+    }
+
+    /* Scroll Wheel Cue */
+    @keyframes scrollWheel {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(10px);
+        opacity: 0;
+      }
+    }
+    .animate-scroll-wheel {
+      animation: scrollWheel 1.8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+    }
+
+    /* Scroll Reveal Utility */
+    .reveal-section {
+      opacity: 0;
+      transform: translateY(2.5rem);
+      transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+    }
+    .reveal-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .animate-float-gentle,
+      .animate-scroll-wheel {
+        animation: none !important;
+      }
+      .reveal-section {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#0D0F12] text-zinc-100 min-h-screen relative transition-colors duration-500 antialiased selection:bg-orange-600 selection:text-white overflow-x-hidden">
+
+  <!-- ==================================================================== -->
+  <!-- FULL-PAGE CINEMATIC BACKGROUND SLIDESHOW (CONTINUOUS VIDEO-LIKE)     -->
+  <!-- ==================================================================== -->
+  <div id="global-slideshow" class="fixed inset-0 z-0 pointer-events-none overflow-hidden" aria-hidden="true">
+    <div class="bg-slide absolute inset-0 transition-opacity duration-[2000ms] ease-in-out opacity-100" data-slide="0">
+      <img
+        src="https://images.pexels.com/photos/38520034/pexels-photo-38520034.jpeg?auto=compress&cs=tinysrgb&w=2000"
+        alt=""
+        class="slide-img w-full h-full object-cover object-center transition-transform duration-[8000ms] ease-out scale-110 opacity-30"
+      />
+    </div>
+    <div class="bg-slide absolute inset-0 transition-opacity duration-[2000ms] ease-in-out opacity-0" data-slide="1">
+      <img
+        src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2000&q=85"
+        alt=""
+        class="slide-img w-full h-full object-cover object-center transition-transform duration-[8000ms] ease-out scale-100 opacity-30"
+      />
+    </div>
+    <div class="bg-slide absolute inset-0 transition-opacity duration-[2000ms] ease-in-out opacity-0" data-slide="2">
+      <img
+        src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2000&q=85"
+        alt=""
+        class="slide-img w-full h-full object-cover object-center transition-transform duration-[8000ms] ease-out scale-100 opacity-30"
+      />
+    </div>
+    <div class="bg-slide absolute inset-0 transition-opacity duration-[2000ms] ease-in-out opacity-0" data-slide="3">
+      <img
+        src="https://images.pexels.com/photos/37520403/pexels-photo-37520403.jpeg?auto=compress&cs=tinysrgb&w=2000"
+        alt=""
+        class="slide-img w-full h-full object-cover object-center transition-transform duration-[8000ms] ease-out scale-100 opacity-30"
+      />
+    </div>
+    <div class="bg-slide absolute inset-0 transition-opacity duration-[2000ms] ease-in-out opacity-0" data-slide="4">
+      <img
+        src="https://images.pexels.com/photos/27292241/pexels-photo-27292241.jpeg?auto=compress&cs=tinysrgb&w=2000"
+        alt=""
+        class="slide-img w-full h-full object-cover object-center transition-transform duration-[8000ms] ease-out scale-100 opacity-30"
+      />
+    </div>
+
+    <!-- Readability Veil & Architectural Grid -->
+    <div id="slideshow-veil" class="absolute inset-0 bg-gradient-to-b from-[#0B0D10]/80 via-[#0D0F12]/85 to-[#0D0F12]/94 transition-colors duration-500"></div>
+    <div id="slideshow-grid" class="absolute inset-0 bg-architectural-grid opacity-45"></div>
+  </div>
+
+  <!-- ==================================================================== -->
+  <!-- BRAND LOADING SCREEN                                                 -->
+  <!-- ==================================================================== -->
+  <div
+    id="loading-screen"
+    class="fixed inset-0 z-[100] bg-[#0B0C0E] flex flex-col items-center justify-center px-6 transition-opacity duration-500"
+    role="status"
+    aria-label="Loading TreS Corp Digital Headquarters"
+  >
+    <div class="mb-8 transform scale-110">
+      <div class="inline-flex items-center gap-3 select-none">
+        <div class="w-[3px] h-9 bg-gradient-to-b from-orange-500 via-orange-600 to-amber-500 rounded-full"></div>
+        <div class="flex flex-col">
+          <div class="flex items-baseline tracking-[0.2em] font-black leading-none font-display text-2xl sm:text-3xl">
+            <span class="text-white">TRES</span>
+            <span class="text-orange-500 ml-1.5">CORP</span>
+          </div>
+          <span class="text-[10px] tracking-[0.26em] uppercase mt-1.5 font-semibold text-zinc-400">
+            Construction &amp; Civil Engineering
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="w-64 sm:w-80 h-[2px] overflow-hidden rounded-full bg-zinc-800">
+      <div id="load-progress-bar" class="h-full bg-gradient-to-r from-orange-600 via-orange-500 to-amber-400 transition-all duration-150 ease-out" style="width: 15%"></div>
+    </div>
+    <p class="mt-4 text-[11px] uppercase tracking-[0.28em] font-medium text-zinc-400">
+      BUILDING EXCELLENCE. ENGINEERING THE FUTURE.
+    </p>
+  </div>
+
+  <!-- ==================================================================== -->
+  <!-- TOP SCROLL PROGRESS INDICATOR                                        -->
+  <!-- ==================================================================== -->
+  <div class="fixed top-0 left-0 right-0 h-[3px] z-[60] bg-transparent pointer-events-none" aria-hidden="true">
+    <div id="scroll-progress-bar" class="h-full bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500 transition-all duration-100 ease-out" style="width: 0%"></div>
+  </div>
+
+  <!-- ==================================================================== -->
+  <!-- FIXED NAVIGATION HEADER (HOME, ABOUT US, SERVICES, CONTACT)          -->
+  <!-- ==================================================================== -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-gradient-to-b from-black/80 via-black/40 to-transparent py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3">
+      <!-- Clean Architectural Wordmark -->
+      <a href="#home" class="inline-flex items-center gap-3 select-none group" aria-label="TreS Corp Home">
+        <div class="w-[3px] h-8 sm:h-9 bg-gradient-to-b from-orange-500 via-orange-600 to-amber-500 rounded-full transition-transform duration-300 group-hover:scale-y-110"></div>
+        <div class="flex flex-col">
+          <div class="flex items-baseline tracking-[0.2em] font-black leading-none font-display text-xl sm:text-2xl">
+            <span class="brand-tres text-white transition-colors">TRES</span>
+            <span class="text-orange-500 ml-1.5">CORP</span>
+          </div>
+          <span class="brand-sub text-[9px] tracking-[0.28em] uppercase mt-1 font-medium hidden sm:block text-zinc-400">
+            Construction &amp; Civil
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links (Only: Home, About Us, Services, Contact) -->
+      <nav class="hidden xl:flex items-center gap-8" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link text-xs font-semibold uppercase tracking-[0.14em] transition-colors relative py-1 group text-zinc-300 hover:text-orange-400">
+          Home
+          <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#about" class="nav-link text-xs font-semibold uppercase tracking-[0.14em] transition-colors relative py-1 group text-zinc-300 hover:text-orange-400">
+          About Us
+          <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#services" class="nav-link text-xs font-semibold uppercase tracking-[0.14em] transition-colors relative py-1 group text-zinc-300 hover:text-orange-400">
+          Services
+          <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#contact" class="nav-link text-xs font-semibold uppercase tracking-[0.14em] transition-colors relative py-1 group text-zinc-300 hover:text-orange-400">
+          Contact
+          <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </nav>
+
+      <!-- Right Actions: Day/Night Toggle + Phone + Get a Quote + Mobile Menu -->
+      <div class="flex items-center gap-2.5 sm:gap-3.5">
+        <button
+          id="theme-toggle-btn"
+          type="button"
+          aria-label="Switch to Day Mode"
+          title="Switch to Day Mode"
+          class="inline-flex items-center gap-2 px-3 py-2 rounded-full border text-xs font-display font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer bg-zinc-900/90 text-amber-400 border-zinc-700 hover:border-orange-500 shadow-md"
+        >
+          <span id="theme-icon-sun" class="inline-flex items-center gap-1.5">
+            <i data-lucide="sun" class="w-3.5 h-3.5 text-amber-400"></i>
+            <span class="hidden sm:inline text-zinc-200">Day</span>
+          </span>
+          <span id="theme-icon-moon" class="hidden items-center gap-1.5">
+            <i data-lucide="moon" class="w-3.5 h-3.5 text-orange-400"></i>
+            <span class="hidden sm:inline text-white">Night</span>
+          </span>
+        </button>
+
+        <a
+          href="tel:+27725775979"
+          class="header-phone hidden lg:inline-flex items-center gap-2 text-xs font-semibold tracking-wider transition-colors text-zinc-300 hover:text-white"
+        >
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-orange-500"></i>
+          <span>072 577 5979</span>
+        </a>
+
+        <a
+          href="#quote"
+          class="hidden md:inline-flex px-5 py-2.5 bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-500 hover:to-amber-500 text-white font-display font-bold text-xs uppercase tracking-[0.16em] rounded transition-all duration-300 shadow-lg shadow-orange-600/25 hover:shadow-orange-500/40 active:scale-95"
+        >
+          GET A QUOTE
+        </a>
+
+        <button
+          id="mobile-menu-open"
+          type="button"
+          class="xl:hidden p-2.5 rounded border transition-colors cursor-pointer border-zinc-700/80 bg-zinc-900/80 text-white hover:border-orange-500"
+          aria-label="Open Navigation Menu"
+        >
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================================================================== -->
+  <!-- FULLSCREEN MOBILE NAVIGATION DRAWER                                  -->
+  <!-- ==================================================================== -->
+  <div
+    id="mobile-drawer"
+    class="fixed inset-0 z-[70] backdrop-blur-xl transition-all duration-500 flex flex-col justify-between p-6 sm:p-10 bg-[#0B0D10]/98 text-white opacity-0 pointer-events-none -translate-y-4"
+    aria-hidden="true"
+  >
+    <div class="mobile-drawer-border flex items-center justify-between border-b pb-5 border-zinc-800">
+      <div class="inline-flex items-center gap-3 select-none">
+        <div class="w-[3px] h-8 bg-gradient-to-b from-orange-500 via-orange-600 to-amber-500 rounded-full"></div>
+        <div class="flex items-baseline tracking-[0.2em] font-black leading-none font-display text-xl">
+          <span class="brand-tres text-white">TRES</span>
+          <span class="text-orange-500 ml-1.5">CORP</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <button
+          id="mobile-theme-toggle"
+          type="button"
+          class="px-3.5 py-2 rounded-full bg-zinc-900 text-amber-400 border border-zinc-700 text-xs font-display font-bold uppercase tracking-wider flex items-center gap-2 cursor-pointer"
+        >
+          <span id="mobile-theme-label">Day Mode</span>
+        </button>
+        <button
+          id="mobile-menu-close"
+          type="button"
+          class="p-2.5 rounded border transition-colors cursor-pointer border-zinc-700 text-zinc-300 hover:text-white hover:border-orange-500"
+          aria-label="Close Navigation Menu"
+        >
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <nav class="flex flex-col gap-4 my-auto py-8" aria-label="Mobile Navigation">
+      <a href="#home" class="mobile-nav-link flex items-center justify-between text-2xl sm:text-3xl font-display font-bold uppercase tracking-wider py-2 border-b transition-all text-zinc-200 hover:text-orange-500 border-zinc-800/60">
+        <span>Home</span>
+        <i data-lucide="arrow-up-right" class="w-5 h-5 text-orange-500"></i>
+      </a>
+      <a href="#about" class="mobile-nav-link flex items-center justify-between text-2xl sm:text-3xl font-display font-bold uppercase tracking-wider py-2 border-b transition-all text-zinc-200 hover:text-orange-500 border-zinc-800/60">
+        <span>About Us</span>
+        <i data-lucide="arrow-up-right" class="w-5 h-5 text-orange-500"></i>
+      </a>
+      <a href="#services" class="mobile-nav-link flex items-center justify-between text-2xl sm:text-3xl font-display font-bold uppercase tracking-wider py-2 border-b transition-all text-zinc-200 hover:text-orange-500 border-zinc-800/60">
+        <span>Services</span>
+        <i data-lucide="arrow-up-right" class="w-5 h-5 text-orange-500"></i>
+      </a>
+      <a href="#contact" class="mobile-nav-link flex items-center justify-between text-2xl sm:text-3xl font-display font-bold uppercase tracking-wider py-2 border-b transition-all text-zinc-200 hover:text-orange-500 border-zinc-800/60">
+        <span>Contact</span>
+        <i data-lucide="arrow-up-right" class="w-5 h-5 text-orange-500"></i>
+      </a>
+    </nav>
+
+    <div class="mobile-drawer-border space-y-4 pt-4 border-t border-zinc-800">
+      <a
+        href="#quote"
+        class="mobile-nav-link block text-center w-full py-4 bg-gradient-to-r from-orange-600 to-orange-500 text-white font-display font-bold text-sm uppercase tracking-[0.18em] rounded shadow-lg shadow-orange-600/30"
+      >
+        GET A QUOTE
+      </a>
+      <div class="flex flex-wrap items-center justify-between gap-3 text-xs text-zinc-400">
+        <a href="tel:+27725775979" class="flex items-center gap-2 hover:text-orange-500">
+          <i data-lucide="phone" class="w-4 h-4 text-orange-500"></i>
+          072 577 5979
+        </a>
+        <a
+          href="https://wa.me/27725775979?text=Hello%20TreS%20Corp%2C%20I%20would%20like%20to%20enquire%20about%20a%20construction%20or%20civil%20engineering%20project."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-2 text-emerald-500 hover:text-emerald-400"
+        >
+          WhatsApp Direct
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================================================================== -->
+  <!-- 3. CINEMATIC HERO SECTION                                            -->
+  <!-- ==================================================================== -->
+  <section id="home" class="relative z-10 min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16">
+    <!-- Subtle Ambient Glow (Night Mode) -->
+    <div id="hero-ambient-glow" class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+      <div class="absolute -bottom-32 -left-32 w-[520px] h-[520px] rounded-full bg-orange-600/15 blur-[130px]"></div>
+      <div class="absolute top-1/4 right-10 w-[380px] h-[380px] rounded-full bg-amber-500/10 blur-[120px]"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="max-w-4xl">
+        <!-- Location Eyebrow -->
+        <div class="surface-pill inline-flex items-center gap-3 px-4 py-2 rounded-sm border backdrop-blur-md mb-7 bg-zinc-900/90 border-zinc-700/80">
+          <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+          <span class="text-primary text-[11px] sm:text-xs font-display font-bold uppercase tracking-[0.22em] text-zinc-200">
+            VOSLOORUS • BOKSBURG • GAUTENG
+          </span>
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="heading-primary font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase leading-[1.06] tracking-tight mb-6 text-white">
+          WE BUILD MORE THAN STRUCTURES.
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500">
+            WE BUILD THE FUTURE.
+          </span>
+        </h1>
+
+        <!-- Brand Slogan -->
+        <div class="flex items-center gap-4 mb-6">
+          <div class="h-[2px] w-12 bg-orange-500 shrink-0"></div>
+          <p class="font-display font-bold text-xs sm:text-sm uppercase tracking-[0.24em] text-orange-400">
+            BUILDING EXCELLENCE. ENGINEERING THE FUTURE.
+          </p>
+        </div>
+
+        <!-- Supporting Paragraph -->
+        <p class="text-body text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl mb-10 text-zinc-300 font-light">
+          TreS Corp delivers construction, building, civil engineering and property development
+          solutions with a commitment to quality, precision and excellence.
+        </p>
+
+        <!-- Primary & Secondary CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-5">
+          <a
+            href="#quote"
+            class="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-500 hover:to-amber-500 text-white font-display font-extrabold text-xs sm:text-sm uppercase tracking-[0.18em] rounded transition-all duration-300 shadow-xl shadow-orange-600/30 hover:shadow-orange-500/45"
+          >
+            <span>REQUEST A QUOTE</span>
+            <i data-lucide="arrow-up-right" class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+          </a>
+
+          <a
+            href="#services"
+            class="btn-secondary inline-flex items-center justify-center gap-3 px-8 py-4 border font-display font-bold text-xs sm:text-sm uppercase tracking-[0.18em] rounded backdrop-blur-md transition-all duration-300 bg-zinc-900/80 hover:bg-zinc-800/95 text-white border-zinc-600 hover:border-orange-500"
+          >
+            <span>EXPLORE OUR SERVICES</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-orange-500"></i>
+          </a>
+        </div>
+
+        <!-- Architectural Pillars & Slideshow Controls -->
+        <div class="border-divider flex flex-col sm:flex-row sm:items-center justify-between gap-4 mt-14 pt-8 border-t border-zinc-800/80">
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 flex-1">
+            <div class="flex items-start gap-2.5">
+              <span class="font-display font-extrabold text-xs text-orange-500 mt-0.5">/01</span>
+              <span class="text-primary text-xs sm:text-sm font-medium tracking-wide text-zinc-300">Building Construction</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-display font-extrabold text-xs text-orange-500 mt-0.5">/02</span>
+              <span class="text-primary text-xs sm:text-sm font-medium tracking-wide text-zinc-300">Civil Engineering</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-display font-extrabold text-xs text-orange-500 mt-0.5">/03</span>
+              <span class="text-primary text-xs sm:text-sm font-medium tracking-wide text-zinc-300">Interior Renovations</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="font-display font-extrabold text-xs text-orange-500 mt-0.5">/04</span>
+              <span class="text-primary text-xs sm:text-sm font-medium tracking-wide text-zinc-300">Exterior &amp; Paving</span>
+            </div>
+          </div>
+
+          <!-- Slideshow Progress Dots -->
+          <div class="flex items-center gap-2" aria-label="Background slideshow controls">
+            <button type="button" data-slide-dot="0" aria-label="View background slide 1" class="slide-dot h-1.5 w-7 rounded-full bg-orange-500 transition-all duration-500 cursor-pointer"></button>
+            <button type="button" data-slide-dot="1" aria-label="View background slide 2" class="slide-dot h-1.5 w-2 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-all duration-500 cursor-pointer"></button>
+            <button type="button" data-slide-dot="2" aria-label="View background slide 3" class="slide-dot h-1.5 w-2 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-all duration-500 cursor-pointer"></button>
+            <button type="button" data-slide-dot="3" aria-label="View background slide 4" class="slide-dot h-1.5 w-2 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-all duration-500 cursor-pointer"></button>
+            <button type="button" data-slide-dot="4" aria-label="View background slide 5" class="slide-dot h-1.5 w-2 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-all duration-500 cursor-pointer"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll-Down Indicator -->
+    <a
+      href="#about"
+      aria-label="Scroll down to About TreS Corp"
+      class="hidden sm:flex flex-col items-center gap-2 absolute bottom-7 left-1/2 -translate-x-1/2 z-10 transition-colors text-zinc-400 hover:text-orange-400"
+    >
+      <span class="text-[10px] font-display uppercase tracking-[0.28em]">Scroll</span>
+      <div class="w-5 h-8 rounded-full border border-zinc-600 flex justify-center pt-1.5">
+        <div class="w-1 h-2 rounded-full bg-orange-500 animate-scroll-wheel"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- 5. ABOUT TRES CORP                                                   -->
+  <!-- ==================================================================== -->
+  <section id="about" class="section-alt relative z-10 py-20 lg:py-28 border-t backdrop-blur-md transition-colors duration-500 bg-[#111317]/82 border-zinc-800/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="reveal-section grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <!-- Left Split: Featured Image -->
+        <div class="lg:col-span-5 relative">
+          <div class="surface-card relative rounded-md overflow-hidden border shadow-2xl group border-zinc-800 shadow-black/60">
+            <img
+              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2000&q=85"
+              alt="Engineers and construction specialists reviewing site plans"
+              class="w-full h-[380px] sm:h-[460px] object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0D0F12]/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <p class="text-xs font-display font-bold uppercase tracking-[0.2em] text-orange-400 mb-1">
+                TRES CORP • GAUTENG
+              </p>
+              <p class="text-sm text-zinc-200 font-medium">
+                From groundbreaking foundations to exceptional finished developments, we bring construction visions to life.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Split: Editorial Overview -->
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2.5 text-orange-500 font-display font-bold text-xs uppercase tracking-[0.24em] mb-4">
+            <span class="w-8 h-[2px] bg-orange-500"></span>
+            <span>ABOUT TRES CORP</span>
+          </div>
+
+          <h2 class="heading-primary font-display font-black text-3xl sm:text-4xl lg:text-5xl uppercase leading-[1.1] tracking-tight mb-6 text-white">
+            ENGINEERING CONFIDENCE. <span class="text-orange-500">BUILDING TOMORROW.</span>
+          </h2>
+
+          <p class="text-body text-base sm:text-lg leading-relaxed mb-5 text-zinc-300">
+            TreS Corp is a South African construction, building, renovation, and civil
+            engineering company based in Vosloorus, Boksburg, Gauteng. We provide a complete,
+            end-to-end range of structural building, civil groundworks, interior finishing, and
+            exterior property development services for residential and commercial clients.
+          </p>
+
+          <p class="text-muted text-base leading-relaxed mb-8 text-zinc-400">
+            Every project is guided by quality workmanship, professional project execution,
+            practical construction solutions, attention to detail, client satisfaction, and
+            reliable project coordination—ensuring every structure is built to endure.
+          </p>
+
+          <!-- Six Core Approach Pillars -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 mb-8">
+            <div class="surface-subcard flex items-center gap-2.5 p-3 rounded border transition-colors bg-[#16191F]/90 border-zinc-800/90 hover:border-orange-500/50">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-500 shrink-0"></i>
+              <span class="text-primary text-xs sm:text-sm font-medium capitalize text-zinc-200">Quality workmanship</span>
+            </div>
+            <div class="surface-subcard flex items-center gap-2.5 p-3 rounded border transition-colors bg-[#16191F]/90 border-zinc-800/90 hover:border-orange-500/50">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-500 shrink-0"></i>
+              <span class="text-primary text-xs sm:text-sm font-medium capitalize text-zinc-200">Professional project execution</span>
+            </div>
+            <div class="surface-subcard flex items-center gap-2.5 p-3 rounded border transition-colors bg-[#16191F]/90 border-zinc-800/90 hover:border-orange-500/50">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-500 shrink-0"></i>
+              <span class="text-primary text-xs sm:text-sm font-medium capitalize text-zinc-200">Practical construction solutions</span>
+            </div>
+            <div class="surface-subcard flex items-center gap-2.5 p-3 rounded border transition-colors bg-[#16191F]/90 border-zinc-800/90 hover:border-orange-500/50">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-500 shrink-0"></i>
+              <span class="text-primary text-xs sm:text-sm font-medium capitalize text-zinc-200">Attention to detail</span>
+            </div>
+            <div class="surface-subcard flex items-center gap-2.5 p-3 rounded border transition-colors bg-[#16191F]/90 border-zinc-800/90 hover:border-orange-500/50">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-500 shrink-0"></i>
+              <span class="text-primary text-xs sm:text-sm font-medium capitalize text-zinc-200">Client satisfaction</span>
+            </div>
+            <div class="surface-subcard flex items-center gap-2.5 p-3 rounded border transition-colors bg-[#16191F]/90 border-zinc-800/90 hover:border-orange-500/50">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-500 shrink-0"></i>
+              <span class="text-primary text-xs sm:text-sm font-medium capitalize text-zinc-200">Reliable project coordination</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <a
+              href="#services"
+              class="px-7 py-3.5 bg-orange-600 hover:bg-orange-500 text-white font-display font-bold text-xs uppercase tracking-[0.18em] rounded transition-colors"
+            >
+              EXPLORE OUR CAPABILITIES
+            </a>
+            <a
+              href="#quote"
+              class="btn-secondary px-7 py-3.5 border font-display font-bold text-xs uppercase tracking-[0.18em] rounded transition-colors bg-transparent hover:bg-zinc-800/70 text-zinc-200 border-zinc-700"
+            >
+              REQUEST A QUOTE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- 6. OUR CONSTRUCTION SERVICES (UNIFIED EDITORIAL OVERVIEW)            -->
+  <!-- ==================================================================== -->
+  <section id="services" class="section-main relative z-10 py-20 lg:py-28 border-t backdrop-blur-md transition-colors duration-500 bg-[#0D0F12]/82 border-zinc-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Unified Narrative Intro -->
+      <div class="max-w-4xl mb-14">
+        <div class="inline-flex items-center gap-2.5 text-orange-500 font-display font-bold text-xs uppercase tracking-[0.24em] mb-4">
+          <span class="w-8 h-[2px] bg-orange-500"></span>
+          <span>WHAT WE DO • FULL CAPABILITY OVERVIEW</span>
+        </div>
+        <h2 class="heading-primary font-display font-black text-3xl sm:text-4xl lg:text-5xl uppercase tracking-tight mb-5 text-white">
+          COMPREHENSIVE CONSTRUCTION <span class="text-orange-500">&amp; ENGINEERING SERVICES</span>
+        </h2>
+        <p class="text-body text-base sm:text-lg leading-relaxed text-zinc-300">
+          Rather than limiting our clients to isolated trades, TreS Corp brings every phase of
+          construction together under one roof. Whether you require new building construction,
+          architectural drawings, site excavation, reinforced concrete foundations, interior
+          flooring, tiling, drywalling, plumbing installations, roof repairs, or paving—our
+          four integrated divisions deliver seamless execution from start to finish. Click any
+          service below to enquire directly.
+        </p>
+      </div>
+
+      <!-- Compact 4-Division Architectural Ledger -->
+      <div id="service-divisions-container" class="surface-card rounded-lg border divide-y overflow-hidden shadow-xl bg-[#14171D]/92 border-zinc-800 divide-zinc-800/90 shadow-black/50">
+        <!-- Populated cleanly via JS from SERVICE_DIVISIONS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- 7. OUR EXPERTISE — IMMERSIVE SECTION                                 -->
+  <!-- ==================================================================== -->
+  <section id="expertise" class="section-expertise relative z-10 py-20 lg:py-28 overflow-hidden border-t backdrop-blur-sm transition-colors duration-500 bg-[#0D0F12]/70 border-zinc-800">
+    <div class="reveal-section relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2.5 text-orange-500 font-display font-bold text-xs uppercase tracking-[0.26em] mb-4">
+          <span class="w-6 h-[2px] bg-orange-500"></span>
+          <span>CORE DISCIPLINES</span>
+          <span class="w-6 h-[2px] bg-orange-500"></span>
+        </div>
+        <h2 class="heading-primary font-display font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tight leading-tight text-white">
+          BUILT ON PRECISION. <span class="text-orange-500">DEFINED BY QUALITY.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="surface-card group relative p-7 rounded-md backdrop-blur-md border transition-all duration-500 hover:-translate-y-1.5 bg-[#13161C]/90 border-zinc-800 hover:border-orange-500">
+          <div class="flex items-center justify-between mb-6">
+            <div class="w-11 h-11 rounded bg-orange-600/15 border border-orange-500/30 flex items-center justify-center text-orange-500 group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">
+              <i data-lucide="building-2" class="w-5 h-5"></i>
+            </div>
+            <span class="num-watermark font-display font-black text-3xl text-zinc-800 group-hover:text-orange-500/40 transition-colors">01</span>
+          </div>
+          <h3 class="heading-primary font-display font-extrabold text-lg uppercase tracking-wide mb-2.5 text-white">CONSTRUCTION</h3>
+          <p class="text-body text-sm leading-relaxed text-zinc-300">Professional building and construction solutions.</p>
+        </div>
+
+        <div class="surface-card group relative p-7 rounded-md backdrop-blur-md border transition-all duration-500 hover:-translate-y-1.5 bg-[#13161C]/90 border-zinc-800 hover:border-orange-500">
+          <div class="flex items-center justify-between mb-6">
+            <div class="w-11 h-11 rounded bg-orange-600/15 border border-orange-500/30 flex items-center justify-center text-orange-500 group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">
+              <i data-lucide="hard-hat" class="w-5 h-5"></i>
+            </div>
+            <span class="num-watermark font-display font-black text-3xl text-zinc-800 group-hover:text-orange-500/40 transition-colors">02</span>
+          </div>
+          <h3 class="heading-primary font-display font-extrabold text-lg uppercase tracking-wide mb-2.5 text-white">CIVIL WORKS</h3>
+          <p class="text-body text-sm leading-relaxed text-zinc-300">Groundworks, foundations, concrete and excavation.</p>
+        </div>
+
+        <div class="surface-card group relative p-7 rounded-md backdrop-blur-md border transition-all duration-500 hover:-translate-y-1.5 bg-[#13161C]/90 border-zinc-800 hover:border-orange-500">
+          <div class="flex items-center justify-between mb-6">
+            <div class="w-11 h-11 rounded bg-orange-600/15 border border-orange-500/30 flex items-center justify-center text-orange-500 group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">
+              <i data-lucide="hammer" class="w-5 h-5"></i>
+            </div>
+            <span class="num-watermark font-display font-black text-3xl text-zinc-800 group-hover:text-orange-500/40 transition-colors">03</span>
+          </div>
+          <h3 class="heading-primary font-display font-extrabold text-lg uppercase tracking-wide mb-2.5 text-white">RENOVATIONS</h3>
+          <p class="text-body text-sm leading-relaxed text-zinc-300">Property improvements, remodelling and finishing.</p>
+        </div>
+
+        <div class="surface-card group relative p-7 rounded-md backdrop-blur-md border transition-all duration-500 hover:-translate-y-1.5 bg-[#13161C]/90 border-zinc-800 hover:border-orange-500">
+          <div class="flex items-center justify-between mb-6">
+            <div class="w-11 h-11 rounded bg-orange-600/15 border border-orange-500/30 flex items-center justify-center text-orange-500 group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">
+              <i data-lucide="compass" class="w-5 h-5"></i>
+            </div>
+            <span class="num-watermark font-display font-black text-3xl text-zinc-800 group-hover:text-orange-500/40 transition-colors">04</span>
+          </div>
+          <h3 class="heading-primary font-display font-extrabold text-lg uppercase tracking-wide mb-2.5 text-white">PROJECT MANAGEMENT</h3>
+          <p class="text-body text-sm leading-relaxed text-zinc-300">Organized construction planning and project coordination.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- 8. FEATURED PROJECTS & PORTFOLIO (4 CURATED SHOWCASE ITEMS)          -->
+  <!-- ==================================================================== -->
+  <section id="projects" class="section-alt relative z-10 py-20 lg:py-28 border-t backdrop-blur-md transition-colors duration-500 bg-[#111317]/82 border-zinc-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
+        <div>
+          <div class="inline-flex items-center gap-2.5 text-orange-500 font-display font-bold text-xs uppercase tracking-[0.24em] mb-4">
+            <span class="w-8 h-[2px] bg-orange-500"></span>
+            <span>ARCHITECTURAL &amp; TECHNICAL SHOWCASE</span>
+          </div>
+          <h2 class="heading-primary font-display font-black text-3xl sm:text-4xl lg:text-5xl uppercase tracking-tight text-white">
+            PROJECT SCOPE <span class="text-orange-500">&amp; PORTFOLIO</span>
+          </h2>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div id="gallery-filters" class="flex flex-wrap gap-2">
+          <button type="button" data-cat="All" class="gallery-filter-btn px-4 py-2 rounded text-xs font-display font-bold uppercase tracking-[0.14em] transition-all cursor-pointer bg-orange-600 text-white">All</button>
+          <button type="button" data-cat="Residential" class="gallery-filter-btn px-4 py-2 rounded text-xs font-display font-bold uppercase tracking-[0.14em] transition-all cursor-pointer bg-[#171A21] text-zinc-300 border border-zinc-800 hover:border-zinc-600">Residential</button>
+          <button type="button" data-cat="Commercial" class="gallery-filter-btn px-4 py-2 rounded text-xs font-display font-bold uppercase tracking-[0.14em] transition-all cursor-pointer bg-[#171A21] text-zinc-300 border border-zinc-800 hover:border-zinc-600">Commercial</button>
+          <button type="button" data-cat="Civil & Concrete" class="gallery-filter-btn px-4 py-2 rounded text-xs font-display font-bold uppercase tracking-[0.14em] transition-all cursor-pointer bg-[#171A21] text-zinc-300 border border-zinc-800 hover:border-zinc-600">Civil &amp; Concrete</button>
+          <button type="button" data-cat="Renovations & Planning" class="gallery-filter-btn px-4 py-2 rounded text-xs font-display font-bold uppercase tracking-[0.14em] transition-all cursor-pointer bg-[#171A21] text-zinc-300 border border-zinc-800 hover:border-zinc-600">Renovations &amp; Planning</button>
+        </div>
+      </div>
+
+      <!-- Transparent Illustrative Notice -->
+      <div class="surface-subcard mb-8 p-4 rounded border flex items-start sm:items-center gap-3 text-xs sm:text-sm bg-[#161920]/95 border-zinc-800 text-zinc-400">
+        <i data-lucide="sparkles" class="w-4 h-4 text-orange-500 shrink-0 mt-0.5 sm:mt-0"></i>
+        <span>
+          <strong class="heading-primary text-zinc-200">Illustrative Capability Showcase:</strong>
+          The architectural and engineering imagery below illustrates the construction disciplines, structural finishes, and civil works delivered by TreS Corp.
+        </span>
+      </div>
+
+      <!-- 2x2 Gallery Grid -->
+      <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Populated via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div
+    id="lightbox-modal"
+    class="fixed inset-0 z-[80] bg-black/95 backdrop-blur-lg hidden items-center justify-center p-4 sm:p-8"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="lightbox-title"
+  >
+    <div id="lightbox-content" class="relative max-w-5xl w-full bg-[#13161C] border border-zinc-800 rounded-lg overflow-hidden shadow-2xl">
+      <button
+        id="lightbox-close"
+        type="button"
+        class="absolute top-4 right-4 z-10 p-2.5 rounded-full bg-black/80 text-white hover:bg-orange-600 transition-colors cursor-pointer"
+        aria-label="Close Fullscreen Image"
+      >
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <img id="lightbox-img" src="" alt="" class="w-full max-h-[72vh] object-cover" />
+
+      <div class="p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-zinc-800">
+        <div>
+          <div class="flex items-center gap-3 mb-2">
+            <span id="lightbox-category" class="px-2.5 py-0.5 bg-orange-600/20 border border-orange-500/40 rounded text-[10px] font-display font-bold uppercase tracking-widest text-orange-400"></span>
+            <span class="text-xs text-zinc-400">Illustrative Capability Reference</span>
+          </div>
+          <h3 id="lightbox-title" class="font-display font-bold text-xl sm:text-2xl text-white"></h3>
+          <p id="lightbox-scope" class="text-sm text-zinc-300 mt-1"></p>
+        </div>
+
+        <button
+          id="lightbox-enquire-btn"
+          type="button"
+          class="px-6 py-3 bg-orange-600 hover:bg-orange-500 text-white font-display font-bold text-xs uppercase tracking-[0.16em] rounded shrink-0 transition-colors cursor-pointer"
+        >
+          ENQUIRE SIMILAR SCOPE
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================================================================== -->
+  <!-- 9. WHY CHOOSE TRES CORP?                                             -->
+  <!-- ==================================================================== -->
+  <section id="why-us" class="section-main relative z-10 py-20 lg:py-28 border-t backdrop-blur-md overflow-hidden transition-colors duration-500 bg-[#0D0F12]/82 border-zinc-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="reveal-section">
+        <div class="max-w-3xl mb-16">
+          <div class="inline-flex items-center gap-2.5 text-orange-500 font-display font-bold text-xs uppercase tracking-[0.24em] mb-4">
+            <span class="w-8 h-[2px] bg-orange-500"></span>
+            <span>THE TRES CORP STANDARD</span>
+          </div>
+          <h2 class="heading-primary font-display font-black text-3xl sm:text-4xl lg:text-5xl uppercase tracking-tight leading-tight text-white">
+            THE FOUNDATION OF EVERY GREAT PROJECT IS <span class="text-orange-500">TRUST.</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="surface-card group p-8 rounded-md border transition-all duration-300 hover:-translate-y-1 bg-[#14171D] border-zinc-800/90 hover:border-orange-500/60">
+            <div class="flex items-center justify-between mb-6">
+              <div class="surface-icon w-12 h-12 rounded border group-hover:border-orange-500 flex items-center justify-center text-orange-500 transition-colors bg-zinc-900 border-zinc-700/80">
+                <i data-lucide="layers" class="w-6 h-6"></i>
+              </div>
+              <span class="num-watermark font-display font-bold text-xs tracking-widest text-zinc-600">01</span>
+            </div>
+            <h3 class="heading-primary font-display font-bold text-lg mb-3 transition-colors text-white group-hover:text-orange-400">Comprehensive Construction Solutions</h3>
+            <p class="text-muted text-sm leading-relaxed text-zinc-400">From architectural drawings and site excavation to structural construction, interior fit-outs, and exterior paving under one coordinated partner.</p>
+          </div>
+
+          <div class="surface-card group p-8 rounded-md border transition-all duration-300 hover:-translate-y-1 bg-[#14171D] border-zinc-800/90 hover:border-orange-500/60">
+            <div class="flex items-center justify-between mb-6">
+              <div class="surface-icon w-12 h-12 rounded border group-hover:border-orange-500 flex items-center justify-center text-orange-500 transition-colors bg-zinc-900 border-zinc-700/80">
+                <i data-lucide="ruler" class="w-6 h-6"></i>
+              </div>
+              <span class="num-watermark font-display font-bold text-xs tracking-widest text-zinc-600">02</span>
+            </div>
+            <h3 class="heading-primary font-display font-bold text-lg mb-3 transition-colors text-white group-hover:text-orange-400">Attention to Detail</h3>
+            <p class="text-muted text-sm leading-relaxed text-zinc-400">Meticulous focus on structural alignment, concrete curing, waterproofing, and finishing tolerances across every phase of work.</p>
+          </div>
+
+          <div class="surface-card group p-8 rounded-md border transition-all duration-300 hover:-translate-y-1 bg-[#14171D] border-zinc-800/90 hover:border-orange-500/60">
+            <div class="flex items-center justify-between mb-6">
+              <div class="surface-icon w-12 h-12 rounded border group-hover:border-orange-500 flex items-center justify-center text-orange-500 transition-colors bg-zinc-900 border-zinc-700/80">
+                <i data-lucide="shield-check" class="w-6 h-6"></i>
+              </div>
+              <span class="num-watermark font-display font-bold text-xs tracking-widest text-zinc-600">03</span>
+            </div>
+            <h3 class="heading-primary font-display font-bold text-lg mb-3 transition-colors text-white group-hover:text-orange-400">Quality-Focused Workmanship</h3>
+            <p class="text-muted text-sm leading-relaxed text-zinc-400">Disciplined trade execution using proven building practices and durable materials built to withstand everyday demands.</p>
+          </div>
+
+          <div class="surface-card group p-8 rounded-md border transition-all duration-300 hover:-translate-y-1 bg-[#14171D] border-zinc-800/90 hover:border-orange-500/60">
+            <div class="flex items-center justify-between mb-6">
+              <div class="surface-icon w-12 h-12 rounded border group-hover:border-orange-500 flex items-center justify-center text-orange-500 transition-colors bg-zinc-900 border-zinc-700/80">
+                <i data-lucide="wrench" class="w-6 h-6"></i>
+              </div>
+              <span class="num-watermark font-display font-bold text-xs tracking-widest text-zinc-600">04</span>
+            </div>
+            <h3 class="heading-primary font-display font-bold text-lg mb-3 transition-colors text-white group-hover:text-orange-400">Diverse Construction Capabilities</h3>
+            <p class="text-muted text-sm leading-relaxed text-zinc-400">Versatile capacity spanning residential builds, civil groundworks, commercial remodelling, plumbing fittings, and property maintenance.</p>
+          </div>
+
+          <div class="surface-card group p-8 rounded-md border transition-all duration-300 hover:-translate-y-1 bg-[#14171D] border-zinc-800/90 hover:border-orange-500/60">
+            <div class="flex items-center justify-between mb-6">
+              <div class="surface-icon w-12 h-12 rounded border group-hover:border-orange-500 flex items-center justify-center text-orange-500 transition-colors bg-zinc-900 border-zinc-700/80">
+                <i data-lucide="check-circle-2" class="w-6 h-6"></i>
+              </div>
+              <span class="num-watermark font-display font-bold text-xs tracking-widest text-zinc-600">05</span>
+            </div>
+            <h3 class="heading-primary font-display font-bold text-lg mb-3 transition-colors text-white group-hover:text-orange-400">Client-Focused Approach</h3>
+            <p class="text-muted text-sm leading-relaxed text-zinc-400">Clear communication, transparent scope alignment, and responsive consultation tailored to each client’s practical objectives.</p>
+          </div>
+
+          <div class="surface-card group p-8 rounded-md border transition-all duration-300 hover:-translate-y-1 bg-[#14171D] border-zinc-800/90 hover:border-orange-500/60">
+            <div class="flex items-center justify-between mb-6">
+              <div class="surface-icon w-12 h-12 rounded border group-hover:border-orange-500 flex items-center justify-center text-orange-500 transition-colors bg-zinc-900 border-zinc-700/80">
+                <i data-lucide="hard-hat" class="w-6 h-6"></i>
+              </div>
+              <span class="num-watermark font-display font-bold text-xs tracking-widest text-zinc-600">06</span>
+            </div>
+            <h3 class="heading-primary font-display font-bold text-lg mb-3 transition-colors text-white group-hover:text-orange-400">Professional Project Coordination</h3>
+            <p class="text-muted text-sm leading-relaxed text-zinc-400">Structured sequencing of trades, materials, and on-site workflows to maintain momentum and orderly site execution.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- 10. CONSTRUCTION PROCESS (4-STAGE TIMELINE)                          -->
+  <!-- ==================================================================== -->
+  <section class="section-alt relative z-10 py-20 lg:py-28 border-t backdrop-blur-md transition-colors duration-500 bg-[#111317]/82 border-zinc-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal-section">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2.5 text-orange-500 font-display font-bold text-xs uppercase tracking-[0.24em] mb-4">
+            <span class="w-6 h-[2px] bg-orange-500"></span>
+            <span>HOW WE DELIVER</span>
+            <span class="w-6 h-[2px] bg-orange-500"></span>
+          </div>
+          <h2 class="heading-primary font-display font-black text-3xl sm:text-4xl lg:text-5xl uppercase tracking-tight text-white">
+            OUR CONSTRUCTION <span class="text-orange-500">PROCESS</span>
+          </h2>
+        </div>
+
+        <div class="relative">
+          <div class="hidden lg:block absolute top-11 left-[12%] right-[12%] h-[2px] bg-gradient-to-r from-orange-600/40 via-orange-500 to-orange-600/40" aria-hidden="true"></div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 relative">
+            <div class="relative flex lg:flex-col items-start lg:items-center lg:text-center gap-5 lg:gap-0">
+              <div class="lg:hidden absolute left-6 top-14 bottom-[-2rem] w-[2px] bg-zinc-800" aria-hidden="true"></div>
+              <div class="surface-node relative z-10 w-12 h-12 lg:w-20 lg:h-20 rounded-full border-2 border-orange-500 flex items-center justify-center shrink-0 shadow-lg shadow-orange-600/20 lg:mb-6 bg-[#161920]">
+                <span class="heading-primary font-display font-black text-sm lg:text-lg text-white">01</span>
+              </div>
+              <div class="surface-card flex-1 border hover:border-orange-500/60 rounded-md p-6 w-full transition-colors bg-[#161920] border-zinc-800">
+                <span class="block text-[11px] font-display font-extrabold uppercase tracking-[0.22em] text-orange-500 mb-1.5">STEP 01</span>
+                <h3 class="heading-primary font-display font-black text-xl uppercase tracking-wide mb-2.5 text-white">CONSULTATION</h3>
+                <p class="text-muted text-sm leading-relaxed text-zinc-400">Understand the client's project, vision and requirements.</p>
+              </div>
+            </div>
+
+            <div class="relative flex lg:flex-col items-start lg:items-center lg:text-center gap-5 lg:gap-0">
+              <div class="lg:hidden absolute left-6 top-14 bottom-[-2rem] w-[2px] bg-zinc-800" aria-hidden="true"></div>
+              <div class="surface-node relative z-10 w-12 h-12 lg:w-20 lg:h-20 rounded-full border-2 border-orange-500 flex items-center justify-center shrink-0 shadow-lg shadow-orange-600/20 lg:mb-6 bg-[#161920]">
+                <span class="heading-primary font-display font-black text-sm lg:text-lg text-white">02</span>
+              </div>
+              <div class="surface-card flex-1 border hover:border-orange-500/60 rounded-md p-6 w-full transition-colors bg-[#161920] border-zinc-800">
+                <span class="block text-[11px] font-display font-extrabold uppercase tracking-[0.22em] text-orange-500 mb-1.5">STEP 02</span>
+                <h3 class="heading-primary font-display font-black text-xl uppercase tracking-wide mb-2.5 text-white">PLANNING</h3>
+                <p class="text-muted text-sm leading-relaxed text-zinc-400">Discuss project scope, drawings, requirements and quotation.</p>
+              </div>
+            </div>
+
+            <div class="relative flex lg:flex-col items-start lg:items-center lg:text-center gap-5 lg:gap-0">
+              <div class="lg:hidden absolute left-6 top-14 bottom-[-2rem] w-[2px] bg-zinc-800" aria-hidden="true"></div>
+              <div class="surface-node relative z-10 w-12 h-12 lg:w-20 lg:h-20 rounded-full border-2 border-orange-500 flex items-center justify-center shrink-0 shadow-lg shadow-orange-600/20 lg:mb-6 bg-[#161920]">
+                <span class="heading-primary font-display font-black text-sm lg:text-lg text-white">03</span>
+              </div>
+              <div class="surface-card flex-1 border hover:border-orange-500/60 rounded-md p-6 w-full transition-colors bg-[#161920] border-zinc-800">
+                <span class="block text-[11px] font-display font-extrabold uppercase tracking-[0.22em] text-orange-500 mb-1.5">STEP 03</span>
+                <h3 class="heading-primary font-display font-black text-xl uppercase tracking-wide mb-2.5 text-white">EXECUTION</h3>
+                <p class="text-muted text-sm leading-relaxed text-zinc-400">Coordinate the construction process and work according to the agreed scope.</p>
+              </div>
+            </div>
+
+            <div class="relative flex lg:flex-col items-start lg:items-center lg:text-center gap-5 lg:gap-0">
+              <div class="surface-node relative z-10 w-12 h-12 lg:w-20 lg:h-20 rounded-full border-2 border-orange-500 flex items-center justify-center shrink-0 shadow-lg shadow-orange-600/20 lg:mb-6 bg-[#161920]">
+                <span class="heading-primary font-display font-black text-sm lg:text-lg text-white">04</span>
+              </div>
+              <div class="surface-card flex-1 border hover:border-orange-500/60 rounded-md p-6 w-full transition-colors bg-[#161920] border-zinc-800">
+                <span class="block text-[11px] font-display font-extrabold uppercase tracking-[0.22em] text-orange-500 mb-1.5">STEP 04</span>
+                <h3 class="heading-primary font-display font-black text-xl uppercase tracking-wide mb-2.5 text-white">COMPLETION</h3>
+                <p class="text-muted text-sm leading-relaxed text-zinc-400">Complete the agreed work and review the finished project with the client.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- 11. REQUEST A CONSTRUCTION QUOTE                                     -->
+  <!-- ==================================================================== -->
+  <section id="quote" class="section-main relative z-10 py-20 lg:py-28 border-t backdrop-blur-md overflow-hidden transition-colors duration-500 bg-[#0D0F12]/82 border-zinc-800/80">
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-600/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="reveal-section grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <!-- Left Column: Direct Conversion Pitch -->
+        <div class="lg:col-span-5">
+          <div class="inline-flex items-center gap-2.5 text-orange-500 font-display font-bold text-xs uppercase tracking-[0.24em] mb-4">
+            <span class="w-8 h-[2px] bg-orange-500"></span>
+            <span>PROJECT ENQUIRIES</span>
+          </div>
+
+          <h2 class="heading-primary font-display font-black text-3xl sm:text-4xl lg:text-5xl uppercase tracking-tight leading-tight mb-6 text-white">
+            HAVE A PROJECT IN MIND? <span class="text-orange-500">LET'S BUILD IT.</span>
+          </h2>
+
+          <p class="text-body text-base sm:text-lg leading-relaxed mb-8 text-zinc-300">
+            Whether you're planning a new development, renovation, building project or
+            civil engineering assignment, connect with TreS Corp to discuss your requirements.
+          </p>
+
+          <!-- Direct WhatsApp Desk -->
+          <div class="surface-card p-6 rounded-md border mb-6 bg-[#14171D] border-zinc-800">
+            <p class="text-xs font-display font-bold uppercase tracking-[0.2em] text-emerald-500 mb-2">
+              DIRECT WHATSAPP DESK
+            </p>
+            <p class="text-body text-sm mb-5 leading-relaxed text-zinc-300">
+              Prefer to discuss your plans directly or share site photos immediately? Message
+              TreS Corp on WhatsApp.
+            </p>
+            <a
+              id="quote-whatsapp-link"
+              href="https://wa.me/27725775979?text=Hello%20TreS%20Corp%2C%20I%20would%20like%20to%20request%20a%20quote%20regarding%3A%20Building%20Construction"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full py-3.5 px-5 bg-emerald-600 hover:bg-emerald-500 text-white font-display font-bold text-xs uppercase tracking-[0.16em] rounded flex items-center justify-center gap-3 transition-colors shadow-lg shadow-emerald-950/30"
+            >
+              <svg viewBox="0 0 32 32" fill="currentColor" class="w-5 h-5" aria-hidden="true">
+                <path d="M16.004 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.256.59 4.458 1.71 6.4L3.1 28.8l6.584-1.726a12.747 12.747 0 0 0 6.32 1.674h.006c7.058 0 12.798-5.74 12.798-12.8 0-3.42-1.332-6.636-3.75-9.054A12.716 12.716 0 0 0 16.004 3.2zm0 23.384h-.004a10.61 10.61 0 0 1-5.408-1.48l-.388-.23-3.906 1.024 1.042-3.808-.252-.402a10.587 10.587 0 0 1-1.624-5.64c0-5.864 4.772-10.636 10.64-10.636 2.842 0 5.512 1.108 7.52 3.118a10.568 10.568 0 0 1 3.114 7.522c0 5.866-4.772 10.632-10.634 10.632zm5.834-7.964c-.32-.16-1.892-.934-2.186-1.04-.292-.106-.506-.16-.72.16-.212.32-.826 1.04-1.012 1.254-.186.212-.372.24-.692.08-.32-.16-1.35-.498-2.572-1.588-.95-.848-1.592-1.894-1.778-2.214-.186-.32-.02-.494.14-.652.144-.144.32-.374.48-.56.16-.186.212-.32.32-.534.106-.212.054-.4-.026-.56-.08-.16-.72-1.734-.986-2.374-.26-.624-.524-.54-.72-.55l-.614-.01c-.212 0-.56.08-.852.4-.294.32-1.12 1.094-1.12 2.668s1.146 3.094 1.306 3.308c.16.212 2.256 3.444 5.466 4.83.764.33 1.36.526 1.824.674.766.244 1.464.21 2.016.126.614-.092 1.892-.774 2.158-1.52.266-.748.266-1.388.186-1.52-.08-.134-.294-.214-.614-.374z" />
+              </svg>
+              <span>CHAT ON WHATSAPP (072 577 5979)</span>
+            </a>
+          </div>
+
+          <!-- Direct Telephone & Email -->
+          <div class="space-y-3 text-sm">
+            <a
+              href="tel:+27725775979"
+              class="surface-card flex items-center gap-3 p-3.5 rounded border hover:border-orange-500/50 transition-colors bg-[#14171D] border-zinc-800/80 text-zinc-200"
+            >
+              <i data-lucide="phone" class="w-4 h-4 text-orange-500"></i>
+              <span class="text-primary">Call Direct: 072 577 5979</span>
+            </a>
+            <a
+              href="mailto:info.trescorp@gmail.com"
+              class="surface-card flex items-center gap-3 p-3.5 rounded border hover:border-orange-500/50 transition-colors bg-[#14171D] border-zinc-800/80 text-zinc-200"
+            >
+              <i data-lucide="mail" class="w-4 h-4 text-orange-500"></i>
+              <span class="text-primary">Email: info.trescorp@gmail.com</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Project Quote Form -->
+        <div class="lg:col-span-7">
+          <div class="surface-card border rounded-lg p-6 sm:p-10 shadow-2xl bg-[#14171D] border-zinc-800">
+            <!-- Form Success View -->
+            <div id="quote-success-panel" class="hidden py-10 text-center space-y-5">
+              <div class="w-16 h-16 rounded-full bg-emerald-500/15 border border-emerald-500/40 text-emerald-500 flex items-center justify-center mx-auto">
+                <i data-lucide="check" class="w-8 h-8"></i>
+              </div>
+              <h3 class="heading-primary font-display font-black text-2xl uppercase text-white">
+                PROJECT ENQUIRY RECEIVED
+              </h3>
+              <p id="quote-success-summary" class="text-body max-w-md mx-auto text-sm sm:text-base leading-relaxed text-zinc-300"></p>
+              <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">
+                <button
+                  id="send-email-client-btn"
+                  type="button"
+                  class="w-full sm:w-auto px-6 py-3 bg-orange-600 hover:bg-orange-500 text-white font-display font-bold text-xs uppercase tracking-[0.16em] rounded cursor-pointer"
+                >
+                  SEND VIA EMAIL CLIENT
+                </button>
+                <a
+                  id="forward-whatsapp-btn"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full sm:w-auto px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-display font-bold text-xs uppercase tracking-[0.16em] rounded inline-flex items-center justify-center gap-2"
+                >
+                  <span>FORWARD TO WHATSAPP</span>
+                </a>
+                <button
+                  id="new-enquiry-btn"
+                  type="button"
+                  class="w-full sm:w-auto px-5 py-3 bg-zinc-800 hover:bg-zinc-700 text-zinc-200 font-display font-bold text-xs uppercase tracking-[0.16em] rounded cursor-pointer"
+                >
+                  NEW ENQUIRY
+                </button>
+              </div>
+            </div>
+
+            <!-- Interactive Quote Form -->
+            <form id="quote-form" novalidate class="space-y-5">
+              <div class="border-divider border-b pb-4 mb-2 border-zinc-800">
+                <h3 class="heading-primary font-display font-bold text-lg uppercase tracking-wide text-white">
+                  PROJECT SPECIFICATION &amp; QUOTE REQUEST
+                </h3>
+                <p class="text-muted text-xs mt-1 text-zinc-400">
+                  Complete the details below and our team will review your project scope.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="fullName" class="form-label block text-xs font-display font-bold uppercase tracking-wider mb-2 text-zinc-300">
+                    Full Name <span class="text-orange-500">*</span>
+                  </label>
+                  <input
+                    id="fullName"
+                    name="fullName"
+                    type="text"
+                    placeholder="e.g. Thabo Mokoena"
+                    class="form-input w-full px-4 py-3 border focus:border-orange-500 rounded text-sm focus:outline-none transition-colors bg-[#0E1015] border-zinc-700 text-white placeholder-zinc-500"
+                  />
+                  <p id="err-fullName" class="hidden text-xs text-orange-500 mt-1.5"></p>
+                </div>
+
+                <div>
+                  <label for="companyName" class="form-label block text-xs font-display font-bold uppercase tracking-wider mb-2 text-zinc-300">
+                    Company Name <span class="text-zinc-500">(Optional)</span>
+                  </label>
+                  <input
+                    id="companyName"
+                    name="companyName"
+                    type="text"
+                    placeholder="e.g. Horizon Developments"
+                    class="form-input w-full px-4 py-3 border focus:border-orange-500 rounded text-sm focus:outline-none transition-colors bg-[#0E1015] border-zinc-700 text-white placeholder-zinc-500"
+                  />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="email" class="form-label block text-xs font-display font-bold uppercase tracking-wider mb-2 text-zinc-300">
+                    Email Address <span class="text-orange-500">*</span>
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="name@example.co.za"
+                    class="form-input w-full px-4 py-3 border focus:border-orange-500 rounded text-sm focus:outline-none transition-colors bg-[#0E1015] border-zinc-700 text-white placeholder-zinc-500"
+                  />
+                  <p id="err-email" class="hidden text-xs text-orange-500 mt-1.5"></p>
+                </div>
+
+                <div>
+                  <label for="contactNumber" class="form-label block text-xs font-display font-bold uppercase tracking-wider mb-2 text-zinc-300">
+                    Contact Number <span class="text-orange-500">*</span>
+                  </label>
+                  <input
+                    id="contactNumber"
+                    name="contactNumber"
+                    type="tel"
+                    placeholder="e.g. 072 000 0000"
+                    class="form-input w-full px-4 py-3 border focus:border-orange-500 rounded text-sm focus:outline-none transition-colors bg-[#0E1015] border-zinc-700 text-white placeholder-zinc-500"
+                  />
+                  <p id="err-contactNumber" class="hidden text-xs text-orange-500 mt-1.5"></p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="serviceRequired" class="form-label block text-xs font-display font-bold uppercase tracking-wider mb-2 text-zinc-300">
+                    Service Required <span class="text-orange-500">*</span>
+                  </label>
+                  <select
+                    id="serviceRequired"
+                    name="serviceRequired"
+                    class="form-input w-full px-4 py-3 border focus:border-orange-500 rounded text-sm focus:outline-none transition-colors bg-[#0E1015] border-zinc-700 text-white"
+                  >
+                    <!-- Populated via JS -->
+                  </select>
+                </div>
+
+                <div>
+                  <label for="projectLocation" class="form-label block text-xs font-display font-bold uppercase tracking-wider mb-2 text-zinc-300">
+                    Project Location <span class="text-orange-500">*</span>
+                  </label>
+                  <input
+                    id="projectLocation"
+                    name="projectLocation"
+                    type="text"
+                    placeholder="e.g. Vosloorus / Boksburg / Gauteng"
+                    class="form-input w-full px-4 py-3 border focus:border-orange-500 rounded text-sm focus:outline-none transition-colors bg-[#0E1015] border-zinc-700 text-white placeholder-zinc-500"
+                  />
+                  <p id="err-projectLocation" class="hidden text-xs text-orange-500 mt-1.5"></p>
+                </div>
+              </div>
+
+              <div>
+                <label for="estimatedBudget" class="form-label block text-xs font-display font-bold uppercase tracking-wider mb-2 text-zinc-300">
+                  Estimated Project Budget <span class="text-zinc-500">(Optional)</span>
+                </label>
+                <input
+                  id="estimatedBudget"
+                  name="estimatedBudget"
+                  type="text"
+                  placeholder="e.g. R150,000 – R500,000 or To Be Quoted"
+                  class="form-input w-full px-4 py-3 border focus:border-orange-500 rounded text-sm focus:outline-none transition-colors bg-[#0E1015] border-zinc-700 text-white placeholder-zinc-500"
+                />
+              </div>
+
+              <div>
+                <label for="projectDescription" class="form-label block text-xs font-display font-bold uppercase tracking-wider mb-2 text-zinc-300">
+                  Project Description <span class="text-orange-500">*</span>
+                </label>
+                <textarea
+                  id="projectDescription"
+                  name="projectDescription"
+                  rows="4"
+                  placeholder="Describe your site, dimensions, drawings availability, and target timeline..."
+                  class="form-input w-full px-4 py-3 border focus:border-orange-500 rounded text-sm focus:outline-none transition-colors resize-y bg-[#0E1015] border-zinc-700 text-white placeholder-zinc-500"
+                ></textarea>
+                <p id="err-projectDescription" class="hidden text-xs text-orange-500 mt-1.5"></p>
+              </div>
+
+              <button
+                id="submit-quote-btn"
+                type="submit"
+                class="w-full py-4 px-6 bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-500 hover:to-amber-500 disabled:opacity-60 text-white font-display font-extrabold text-xs sm:text-sm uppercase tracking-[0.18em] rounded flex items-center justify-center gap-3 transition-all duration-300 shadow-xl shadow-orange-600/25 cursor-pointer"
+              >
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span id="submit-quote-label">SUBMIT PROJECT ENQUIRY</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- 12. CONTACT & LOCATION                                               -->
+  <!-- ==================================================================== -->
+  <section id="contact" class="section-alt relative z-10 py-20 lg:py-28 border-t backdrop-blur-md transition-colors duration-500 bg-[#111317]/82 border-zinc-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal-section">
+        <div class="max-w-3xl mb-14">
+          <div class="inline-flex items-center gap-2.5 text-orange-500 font-display font-bold text-xs uppercase tracking-[0.24em] mb-4">
+            <span class="w-8 h-[2px] bg-orange-500"></span>
+            <span>HEADQUARTERS &amp; DISPATCH</span>
+          </div>
+          <h2 class="heading-primary font-display font-black text-3xl sm:text-4xl lg:text-5xl uppercase tracking-tight text-white">
+            CONTACT <span class="text-orange-500">TRES CORP</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          <!-- Contact Details Card -->
+          <div class="surface-card lg:col-span-5 border rounded-lg p-7 sm:p-9 flex flex-col justify-between space-y-8 bg-[#151820] border-zinc-800">
+            <div class="space-y-6">
+              <div>
+                <h3 class="heading-primary font-display font-black text-xl uppercase tracking-wider text-white">
+                  TRES CORP
+                </h3>
+                <p class="text-xs font-display uppercase tracking-[0.2em] text-orange-500 mt-1">
+                  Construction, Building &amp; Civil Engineering
+                </p>
+              </div>
+
+              <!-- Address -->
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded bg-orange-600/15 border border-orange-500/30 flex items-center justify-center text-orange-500 shrink-0 mt-0.5">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-display font-bold uppercase tracking-wider text-zinc-400 mb-1">Physical Address</p>
+                  <address class="text-primary not-italic text-sm leading-relaxed text-zinc-200">
+                    14, 11779 Ixolo Crescent,<br />
+                    Vosloorus Ext 2,<br />
+                    Boksburg, Gauteng, 1475,<br />
+                    South Africa.
+                  </address>
+                </div>
+              </div>
+
+              <!-- Telephone -->
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded bg-orange-600/15 border border-orange-500/30 flex items-center justify-center text-orange-500 shrink-0">
+                  <i data-lucide="phone" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-display font-bold uppercase tracking-wider text-zinc-400 mb-1">Telephone</p>
+                  <a href="tel:+27725775979" class="heading-primary text-base font-semibold hover:text-orange-500 transition-colors text-white">
+                    072 577 5979
+                  </a>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded bg-orange-600/15 border border-orange-500/30 flex items-center justify-center text-orange-500 shrink-0">
+                  <i data-lucide="mail" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-display font-bold uppercase tracking-wider text-zinc-400 mb-1">Email</p>
+                  <a href="mailto:info.trescorp@gmail.com" class="heading-primary text-sm sm:text-base font-medium hover:text-orange-500 transition-colors break-all text-white">
+                    info.trescorp@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Operating Hours -->
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded bg-orange-600/15 border border-orange-500/30 flex items-center justify-center text-orange-500 shrink-0">
+                  <i data-lucide="clock" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-display font-bold uppercase tracking-wider text-zinc-400 mb-1">Operating Hours</p>
+                  <p class="text-primary text-sm font-medium text-zinc-200">Opens at 08:00</p>
+                  <p class="text-xs text-zinc-400 mt-0.5">Closing: 17:00 (Configurable)</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="border-divider space-y-3 pt-4 border-t border-zinc-800">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=14+11779+Ixolo+Crescent+Vosloorus+Ext+2+Boksburg+Gauteng+1475+South+Africa"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full py-3.5 px-5 bg-orange-600 hover:bg-orange-500 text-white font-display font-bold text-xs uppercase tracking-[0.16em] rounded flex items-center justify-center gap-2.5 transition-colors"
+              >
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                <span>GET DIRECTIONS</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+
+              <div class="grid grid-cols-2 gap-3">
+                <a
+                  href="https://wa.me/27725775979?text=Hello%20TreS%20Corp%2C%20I%20would%20like%20to%20enquire%20about%20a%20construction%20or%20civil%20engineering%20project."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="py-3 px-4 bg-emerald-600/15 hover:bg-emerald-600 text-emerald-500 hover:text-white border border-emerald-600/40 font-display font-bold text-[11px] uppercase tracking-wider rounded flex items-center justify-center gap-2 transition-colors"
+                >
+                  <span>WHATSAPP</span>
+                </a>
+
+                <a
+                  href="https://www.facebook.com/search/top?q=TreS%20Construction"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-secondary py-3 px-4 hover:bg-blue-600 hover:text-white border hover:border-blue-500 font-display font-bold text-[11px] uppercase tracking-wider rounded flex items-center justify-center gap-2 transition-colors bg-zinc-900 text-zinc-200 border-zinc-700"
+                >
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                  </svg>
+                  <span>TreS Construction</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Google Maps Embed -->
+          <div class="surface-card lg:col-span-7 min-h-[380px] lg:min-h-[500px] rounded-lg overflow-hidden border relative shadow-2xl border-zinc-800 bg-[#151820]">
+            <iframe
+              title="TreS Corp Location Map — Vosloorus Ext 2, Boksburg, Gauteng"
+              src="https://maps.google.com/maps?q=Vosloorus%20Ext%202,%20Boksburg,%20Gauteng,%201475,%20South%20Africa&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              class="w-full h-full min-h-[380px] lg:min-h-[500px] border-0 filter contrast-105"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <!-- 16. PREMIUM ARCHITECTURAL FOOTER                                     -->
+  <!-- ==================================================================== -->
+  <footer class="relative z-10 bg-[#090A0D]/95 backdrop-blur-md border-t border-zinc-800/90 pt-20 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-zinc-800/80">
+        <!-- Brand Column -->
+        <div class="lg:col-span-4 space-y-5">
+          <div class="inline-flex items-center gap-3 select-none">
+            <div class="w-[3px] h-9 bg-gradient-to-b from-orange-500 via-orange-600 to-amber-500 rounded-full"></div>
+            <div class="flex flex-col">
+              <div class="flex items-baseline tracking-[0.2em] font-black leading-none font-display text-2xl">
+                <span class="text-white">TRES</span>
+                <span class="text-orange-500 ml-1.5">CORP</span>
+              </div>
+              <span class="text-[10px] tracking-[0.26em] uppercase mt-1.5 font-semibold text-zinc-400">
+                Construction &amp; Civil Engineering
+              </span>
+            </div>
+          </div>
+
+          <p class="font-display font-bold text-xs uppercase tracking-[0.2em] text-orange-500 pt-2">
+            BUILDING EXCELLENCE. ENGINEERING THE FUTURE.
+          </p>
+          <p class="text-sm text-zinc-400 leading-relaxed">
+            From groundbreaking foundations to exceptional finished developments, we bring construction visions to life.
+          </p>
+          <div class="pt-2 flex items-center gap-3">
+            <a
+              href="https://www.facebook.com/search/top?q=TreS%20Construction"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TreS Construction on Facebook"
+              class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded bg-[#14171D] border border-zinc-800 hover:border-orange-500 text-zinc-300 hover:text-white text-xs font-medium transition-colors"
+            >
+              <svg class="w-4 h-4 fill-current text-orange-500" viewBox="0 0 24 24">
+                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+              </svg>
+              <span>TreS Construction</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="lg:col-span-2">
+          <h4 class="font-display font-bold text-xs uppercase tracking-[0.2em] text-white mb-5">QUICK LINKS</h4>
+          <ul class="space-y-3 text-sm text-zinc-400">
+            <li><a href="#home" class="hover:text-orange-400 transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-orange-400 transition-colors">About Us</a></li>
+            <li><a href="#services" class="hover:text-orange-400 transition-colors">Services</a></li>
+            <li><a href="#expertise" class="hover:text-orange-400 transition-colors">Our Expertise</a></li>
+            <li><a href="#projects" class="hover:text-orange-400 transition-colors">Projects</a></li>
+            <li><a href="#contact" class="hover:text-orange-400 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Core Services -->
+        <div class="lg:col-span-3">
+          <h4 class="font-display font-bold text-xs uppercase tracking-[0.2em] text-white mb-5">SERVICES</h4>
+          <ul class="space-y-3 text-sm text-zinc-400">
+            <li><button type="button" data-enquire="Building Construction" class="footer-service-btn hover:text-orange-400 transition-colors text-left cursor-pointer">Building Construction</button></li>
+            <li><button type="button" data-enquire="Civil Engineering Consulting" class="footer-service-btn hover:text-orange-400 transition-colors text-left cursor-pointer">Civil Engineering</button></li>
+            <li><button type="button" data-enquire="Bathroom Remodelling" class="footer-service-btn hover:text-orange-400 transition-colors text-left cursor-pointer">Renovations</button></li>
+            <li><button type="button" data-enquire="Concrete Work" class="footer-service-btn hover:text-orange-400 transition-colors text-left cursor-pointer">Concrete Work</button></li>
+            <li><button type="button" data-enquire="Paving" class="footer-service-btn hover:text-orange-400 transition-colors text-left cursor-pointer">Paving</button></li>
+            <li><button type="button" data-enquire="Construction Management" class="footer-service-btn hover:text-orange-400 transition-colors text-left cursor-pointer">Construction Management</button></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact -->
+        <div class="lg:col-span-3">
+          <h4 class="font-display font-bold text-xs uppercase tracking-[0.2em] text-white mb-5">CONTACT</h4>
+          <ul class="space-y-3.5 text-sm text-zinc-400">
+            <li>
+              <a href="tel:+27725775979" class="flex items-center gap-2.5 text-zinc-200 hover:text-orange-400 transition-colors font-medium">
+                <i data-lucide="phone" class="w-4 h-4 text-orange-500 shrink-0"></i>
+                <span>072 577 5979</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info.trescorp@gmail.com" class="flex items-center gap-2.5 hover:text-orange-400 transition-colors break-all">
+                <i data-lucide="mail" class="w-4 h-4 text-orange-500 shrink-0"></i>
+                <span>info.trescorp@gmail.com</span>
+              </a>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-orange-500 shrink-0 mt-1"></i>
+              <span>Vosloorus, Boksburg, Gauteng, South Africa.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
+        <p>&copy; <span id="copyright-year">2026</span> TreS Corp. All rights reserved.</p>
+        <p class="font-display uppercase tracking-[0.18em] text-zinc-500">
+          Vosloorus • Boksburg • Gauteng • South Africa
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================================================================== -->
+  <!-- 14. BACK-TO-TOP & FLOATING WHATSAPP BUTTON                           -->
+  <!-- ==================================================================== -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col items-center gap-3.5">
+    <button
+      id="back-to-top-btn"
+      type="button"
+      aria-label="Back to top"
+      class="w-11 h-11 rounded-full bg-[#161920]/95 hover:bg-orange-600 text-zinc-200 hover:text-white border border-zinc-700 hover:border-orange-500 shadow-xl flex items-center justify-center transition-all duration-300 cursor-pointer opacity-0 translate-y-3 pointer-events-none"
+    >
+      <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <a
+      href="https://wa.me/27725775979?text=Hello%20TreS%20Corp%2C%20I%20would%20like%20to%20enquire%20about%20a%20construction%20or%20civil%20engineering%20project."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Contact TreS Corp on WhatsApp (+27 72 577 5979)"
+      title="Chat with TreS Corp on WhatsApp"
+      class="group relative w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center shadow-[0_0_25px_rgba(37,211,102,0.45)] hover:shadow-[0_0_32px_rgba(37,211,102,0.75)] transition-all duration-300 hover:scale-110 animate-float-gentle"
+    >
+      <svg viewBox="0 0 32 32" fill="currentColor" class="w-7 h-7" aria-hidden="true">
+        <path d="M16.004 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.256.59 4.458 1.71 6.4L3.1 28.8l6.584-1.726a12.747 12.747 0 0 0 6.32 1.674h.006c7.058 0 12.798-5.74 12.798-12.8 0-3.42-1.332-6.636-3.75-9.054A12.716 12.716 0 0 0 16.004 3.2zm0 23.384h-.004a10.61 10.61 0 0 1-5.408-1.48l-.388-.23-3.906 1.024 1.042-3.808-.252-.402a10.587 10.587 0 0 1-1.624-5.64c0-5.864 4.772-10.636 10.64-10.636 2.842 0 5.512 1.108 7.52 3.118a10.568 10.568 0 0 1 3.114 7.522c0 5.866-4.772 10.632-10.634 10.632zm5.834-7.964c-.32-.16-1.892-.934-2.186-1.04-.292-.106-.506-.16-.72.16-.212.32-.826 1.04-1.012 1.254-.186.212-.372.24-.692.08-.32-.16-1.35-.498-2.572-1.588-.95-.848-1.592-1.894-1.778-2.214-.186-.32-.02-.494.14-.652.144-.144.32-.374.48-.56.16-.186.212-.32.32-.534.106-.212.054-.4-.026-.56-.08-.16-.72-1.734-.986-2.374-.26-.624-.524-.54-.72-.55l-.614-.01c-.212 0-.56.08-.852.4-.294.32-1.12 1.094-1.12 2.668s1.146 3.094 1.306 3.308c.16.212 2.256 3.444 5.466 4.83.764.33 1.36.526 1.824.674.766.244 1.464.21 2.016.126.614-.092 1.892-.774 2.158-1.52.266-.748.266-1.388.186-1.52-.08-.134-.294-.214-.614-.374z" />
+      </svg>
+      <span class="hidden md:block absolute right-16 px-3.5 py-1.5 rounded bg-[#14171D] border border-zinc-700 text-white text-xs font-display font-bold uppercase tracking-wider whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-xl">
+        WhatsApp TreS Corp
+      </span>
+    </a>
+  </div>
+
+  <!-- ==================================================================== -->
+  <!-- APPLICATION SCRIPT                                                   -->
+  <!-- ==================================================================== -->
+  <script>
+    (function () {
+      // ----------------------------------------------------------------------
+      // DATA DEFINITIONS (ALL 31 SERVICES & 4 CURATED PORTFOLIO ITEMS)
+      // ----------------------------------------------------------------------
+      const SERVICE_DIVISIONS = [
+        {
+          id: 'division-01',
+          code: 'DIVISION 01',
+          title: 'BUILDING & GENERAL CONSTRUCTION',
+          summary:
+            'From architectural drawings and ground-up new building construction to custom home building, accessory structures, refurbishment, building remodelling, and full construction management, we coordinate structural framing, masonry, and turnkey delivery with exacting site supervision.',
+          services: [
+            'Building Construction',
+            'New Building Construction',
+            'Accessory Building Construction',
+            'Custom Home Building',
+            'Construction Management',
+            'Refurbishment',
+            'Building Remodelling',
+            'Architectural Drawings',
+          ],
+        },
+        {
+          id: 'division-02',
+          code: 'DIVISION 02',
+          title: 'CIVIL ENGINEERING & GROUNDWORKS',
+          summary:
+            'Our civil division handles site feasibility and consulting, bulk site excavation, controlled demolition, structural concrete work and pouring, foundation installation and pouring, subsurface foundation drainage, and structural foundation raising to establish unyielding ground stability.',
+          services: [
+            'Civil Engineering Consulting',
+            'Construction Site Excavation',
+            'Demolition',
+            'Concrete Work',
+            'Concrete Pouring',
+            'Foundation Installation',
+            'Foundation Pouring',
+            'Foundation Drainage',
+            'Foundation Raising',
+          ],
+        },
+        {
+          id: 'division-03',
+          code: 'DIVISION 03',
+          title: 'RENOVATIONS & INTERIOR WORKS',
+          summary:
+            'We transform interior spaces through complete bathroom remodelling, interior decorating, acoustic drywall installation and repair, precision floor fitting, porcelain and stone tile work installation, as well as plumbing fixture installation and water fixture repair.',
+          services: [
+            'Bathroom Remodelling',
+            'Interior Decorating',
+            'Drywall Installation',
+            'Drywall Repair',
+            'Floor Fitting',
+            'Tile Work Installation',
+            'Plumbing Fixture Installation',
+            'Water Fixture Repair',
+          ],
+        },
+        {
+          id: 'division-04',
+          code: 'DIVISION 04',
+          title: 'EXTERIOR & SPECIALIZED CONSTRUCTION',
+          summary:
+            'Built for long-term durability and weather resilience, our exterior teams execute custom timber and composite deck construction, protective exterior painting, roof repair and waterproofing, heavy-duty paving, general building maintenance, and full property refurbishment.',
+          services: [
+            'Deck Construction',
+            'Exterior Painting',
+            'Roof Repair',
+            'Paving',
+            'General Building Maintenance',
+            'Property Refurbishment',
+          ],
+        },
+      ];
+
+      const GALLERY_ITEMS = [
+        {
+          id: 'gal-1',
+          title: 'Modern Residential Development',
+          category: 'Residential',
+          scope: 'Custom Home Building, Architectural Drawings & Turnkey Construction',
+          image: 'https://images.pexels.com/photos/37520403/pexels-photo-37520403.jpeg?auto=compress&cs=tinysrgb&w=2000',
+        },
+        {
+          id: 'gal-2',
+          title: 'Commercial Structural Frame & Facade',
+          category: 'Commercial',
+          scope: 'New Building Construction & Construction Management',
+          image: 'https://images.pexels.com/photos/27292241/pexels-photo-27292241.jpeg?auto=compress&cs=tinysrgb&w=2000',
+        },
+        {
+          id: 'gal-3',
+          title: 'Heavy Civil Groundworks & Crane Operations',
+          category: 'Civil & Concrete',
+          scope: 'Site Excavation, Foundation Pouring & Structural Concrete',
+          image: 'https://images.pexels.com/photos/38520034/pexels-photo-38520034.jpeg?auto=compress&cs=tinysrgb&w=2000',
+        },
+        {
+          id: 'gal-4',
+          title: 'Architectural Engineering & Interior Planning',
+          category: 'Renovations & Planning',
+          scope: 'Architectural Drawings, Refurbishment & Remodelling',
+          image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2000&q=85',
+        },
+      ];
+
+      // ----------------------------------------------------------------------
+      // DYNAMIC PNG FAVICON GENERATION FOR CROSS-BROWSER SUPPORT
+      // ----------------------------------------------------------------------
+      try {
+        const canvas = document.createElement('canvas');
+        canvas.width = 64;
+        canvas.height = 64;
+        const ctx = canvas.getContext('2d');
+        if (ctx) {
+          ctx.fillStyle = '#111317';
+          ctx.fillRect(0, 0, 64, 64);
+          ctx.strokeStyle = '#ea580c';
+          ctx.lineWidth = 3;
+          ctx.strokeRect(4, 4, 56, 56);
+          ctx.fillStyle = '#f97316';
+          ctx.font = '900 26px Montserrat, Arial, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText('TC', 32, 34);
+          const pngLink = document.getElementById('favicon-png');
+          if (pngLink) pngLink.href = canvas.toDataURL('image/png');
+        }
+      } catch (e) {}
+
+      // ----------------------------------------------------------------------
+      // RENDER SERVICE DIVISIONS & POPULATE QUOTE SELECT DROPDOWN
+      // ----------------------------------------------------------------------
+      const divisionsContainer = document.getElementById('service-divisions-container');
+      const serviceSelect = document.getElementById('serviceRequired');
+
+      SERVICE_DIVISIONS.forEach((division) => {
+        // Build Division Row
+        const row = document.createElement('div');
+        row.className = 'p-6 sm:p-8 lg:p-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start';
+
+        const pillsHtml = division.services
+          .map(
+            (srv) => `
+            <button
+              type="button"
+              data-service="${srv}"
+              class="service-pill group inline-flex items-center gap-2 px-3.5 py-2 rounded border text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer bg-[#0E1015] hover:bg-orange-600 text-zinc-200 hover:text-white border-zinc-800 hover:border-orange-500"
+            >
+              <span>${srv}</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 text-orange-500 group-hover:text-white transition-colors"></i>
+            </button>`
+          )
+          .join('');
+
+        row.innerHTML = `
+          <div class="lg:col-span-5">
+            <span class="inline-block text-xs font-display font-extrabold uppercase tracking-[0.25em] text-orange-500 mb-2">
+              ${division.code}
+            </span>
+            <h3 class="heading-primary font-display font-black text-xl sm:text-2xl uppercase tracking-tight mb-3 text-white">
+              ${division.title}
+            </h3>
+            <p class="text-muted text-sm sm:text-base leading-relaxed text-zinc-400">
+              ${division.summary}
+            </p>
+          </div>
+          <div class="lg:col-span-7 flex flex-col justify-between h-full">
+            <div>
+              <p class="text-[11px] font-display font-bold uppercase tracking-[0.2em] mb-3.5 text-zinc-500">
+                Included Services (Select any service to request a quote):
+              </p>
+              <div class="flex flex-wrap gap-2.5">
+                ${pillsHtml}
+              </div>
+            </div>
+          </div>
+        `;
+        divisionsContainer.appendChild(row);
+
+        // Build Optgroup in Quote Form
+        const optgroup = document.createElement('optgroup');
+        optgroup.label = `${division.code} — ${division.title}`;
+        division.services.forEach((srv) => {
+          const opt = document.createElement('option');
+          opt.value = srv;
+          opt.textContent = srv;
+          optgroup.appendChild(opt);
+        });
+        serviceSelect.appendChild(optgroup);
+      });
+
+      // ----------------------------------------------------------------------
+      // RENDER GALLERY ITEMS & LIGHTBOX INTERACTION
+      // ----------------------------------------------------------------------
+      const galleryGrid = document.getElementById('gallery-grid');
+      const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+      let isDayMode = false;
+
+      function renderGallery(category = 'All') {
+        const filtered =
+          category === 'All'
+            ? GALLERY_ITEMS
+            : GALLERY_ITEMS.filter((item) => item.category === category);
+
+        galleryGrid.innerHTML = filtered
+          .map(
+            (item) => `
+            <div
+              data-gal-id="${item.id}"
+              class="gallery-card surface-card group relative rounded-md overflow-hidden border cursor-pointer shadow-xl ${
+                isDayMode
+                  ? 'bg-white border-zinc-200 hover:border-orange-500'
+                  : 'bg-[#161920] border-zinc-800 hover:border-orange-500/70'
+              }"
+            >
+              <img
+                src="${item.image}"
+                alt="${item.title}"
+                loading="lazy"
+                class="w-full h-72 sm:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/35 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
+              <div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+                <span class="px-3 py-1 bg-black/75 backdrop-blur-md border border-zinc-700 rounded text-[10px] font-display font-bold uppercase tracking-[0.18em] text-orange-400">
+                  ${item.category}
+                </span>
+                <span class="w-9 h-9 rounded-full bg-black/70 border border-zinc-700 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                  <i data-lucide="maximize-2" class="w-4 h-4"></i>
+                </span>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-1 group-hover:translate-y-0 transition-transform">
+                <p class="text-[10px] font-display uppercase tracking-[0.22em] text-zinc-400 mb-1">
+                  Illustrative Scope
+                </p>
+                <h3 class="font-display font-bold text-lg sm:text-xl text-white mb-1">
+                  ${item.title}
+                </h3>
+                <p class="text-xs sm:text-sm text-zinc-300">${item.scope}</p>
+              </div>
+            </div>`
+          )
+          .join('');
+
+        if (window.lucide) window.lucide.createIcons();
+
+        document.querySelectorAll('.gallery-card').forEach((card) => {
+          card.addEventListener('click', () => {
+            const found = GALLERY_ITEMS.find((g) => g.id === card.dataset.galId);
+            if (found) openLightbox(found);
+          });
+        });
+      }
+
+      renderGallery('All');
+
+      filterBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const cat = btn.dataset.cat;
+          filterBtns.forEach((b) => {
+            if (b.dataset.cat === cat) {
+              b.className =
+                'gallery-filter-btn px-4 py-2 rounded text-xs font-display font-bold uppercase tracking-[0.14em] transition-all cursor-pointer bg-orange-600 text-white';
+            } else {
+              b.className = isDayMode
+                ? 'gallery-filter-btn px-4 py-2 rounded text-xs font-display font-bold uppercase tracking-[0.14em] transition-all cursor-pointer bg-white text-zinc-700 border border-zinc-300 hover:border-orange-500'
+                : 'gallery-filter-btn px-4 py-2 rounded text-xs font-display font-bold uppercase tracking-[0.14em] transition-all cursor-pointer bg-[#171A21] text-zinc-300 border border-zinc-800 hover:border-zinc-600';
+            }
+          });
+          renderGallery(cat);
+        });
+      });
+
+      // Lightbox Controls
+      const lightboxModal = document.getElementById('lightbox-modal');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxCategory = document.getElementById('lightbox-category');
+      const lightboxTitle = document.getElementById('lightbox-title');
+      const lightboxScope = document.getElementById('lightbox-scope');
+      const lightboxEnquireBtn = document.getElementById('lightbox-enquire-btn');
+      let currentLightboxTitle = '';
+
+      function openLightbox(item) {
+        currentLightboxTitle = item.title;
+        lightboxImg.src = item.image;
+        lightboxImg.alt = item.title;
+        lightboxCategory.textContent = item.category;
+        lightboxTitle.textContent = item.title;
+        lightboxScope.textContent = item.scope;
+        lightboxModal.classList.remove('hidden');
+        lightboxModal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        lightboxModal.classList.add('hidden');
+        lightboxModal.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+
+      document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+      lightboxModal.addEventListener('click', (e) => {
+        if (e.target === lightboxModal) closeLightbox();
+      });
+      lightboxEnquireBtn.addEventListener('click', () => {
+        closeLightbox();
+        enquireService(currentLightboxTitle);
+      });
+
+      // ----------------------------------------------------------------------
+      // SERVICE ENQUIRY HELPER (PRE-SELECTS SERVICE & SCROLLS TO QUOTE FORM)
+      // ----------------------------------------------------------------------
+      function enquireService(serviceTitle) {
+        let optionExists = Array.from(serviceSelect.options).some(
+          (opt) => opt.value === serviceTitle
+        );
+        if (!optionExists) {
+          const customOpt = document.createElement('option');
+          customOpt.value = serviceTitle;
+          customOpt.textContent = serviceTitle;
+          serviceSelect.appendChild(customOpt);
+        }
+        serviceSelect.value = serviceTitle;
+        updateQuoteWhatsAppLink(serviceTitle);
+        const quoteEl = document.getElementById('quote');
+        if (quoteEl) quoteEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      function updateQuoteWhatsAppLink(serviceTitle) {
+        const waLink = document.getElementById('quote-whatsapp-link');
+        if (waLink) {
+          const msg = `Hello TreS Corp, I would like to request a quote regarding: ${serviceTitle}`;
+          waLink.href = `https://wa.me/27725775979?text=${encodeURIComponent(msg)}`;
+        }
+      }
+
+      serviceSelect.addEventListener('change', (e) => {
+        updateQuoteWhatsAppLink(e.target.value);
+      });
+
+      document.addEventListener('click', (e) => {
+        const pill = e.target.closest('.service-pill');
+        if (pill) {
+          enquireService(pill.dataset.service);
+          return;
+        }
+        const footerBtn = e.target.closest('.footer-service-btn');
+        if (footerBtn) {
+          enquireService(footerBtn.dataset.enquire);
+        }
+      });
+
+      // ----------------------------------------------------------------------
+      // FULL-PAGE BACKGROUND CINEMATIC SLIDESHOW
+      // ----------------------------------------------------------------------
+      const slides = document.querySelectorAll('.bg-slide');
+      const slideDots = document.querySelectorAll('.slide-dot');
+      let currentSlide = 0;
+
+      function goToSlide(index) {
+        currentSlide = index;
+        slides.forEach((slide, idx) => {
+          const img = slide.querySelector('.slide-img');
+          if (idx === index) {
+            slide.classList.remove('opacity-0');
+            slide.classList.add('opacity-100');
+            if (img) {
+              img.classList.remove('scale-100');
+              img.classList.add('scale-110');
+            }
+          } else {
+            slide.classList.remove('opacity-100');
+            slide.classList.add('opacity-0');
+            if (img) {
+              img.classList.remove('scale-110');
+              img.classList.add('scale-100');
+            }
+          }
+        });
+
+        slideDots.forEach((dot, idx) => {
+          if (idx === index) {
+            dot.className = 'slide-dot h-1.5 w-7 rounded-full bg-orange-500 transition-all duration-500 cursor-pointer';
+          } else {
+            dot.className = isDayMode
+              ? 'slide-dot h-1.5 w-2 rounded-full bg-zinc-400 hover:bg-zinc-600 transition-all duration-500 cursor-pointer'
+              : 'slide-dot h-1.5 w-2 rounded-full bg-zinc-600 hover:bg-zinc-400 transition-all duration-500 cursor-pointer';
+          }
+        });
+      }
+
+      slideDots.forEach((dot) => {
+        dot.addEventListener('click', () => {
+          goToSlide(Number(dot.dataset.slideDot));
+        });
+      });
+
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        setInterval(() => {
+          goToSlide((currentSlide + 1) % slides.length);
+        }, 6500);
+      }
+
+      // ----------------------------------------------------------------------
+      // DAY / NIGHT MODE SWITCHER
+      // ----------------------------------------------------------------------
+      function applyTheme(day) {
+        isDayMode = day;
+        const body = document.body;
+        const veil = document.getElementById('slideshow-veil');
+        const grid = document.getElementById('slideshow-grid');
+        const heroGlow = document.getElementById('hero-ambient-glow');
+        const sunIcon = document.getElementById('theme-icon-sun');
+        const moonIcon = document.getElementById('theme-icon-moon');
+        const mobileThemeLabel = document.getElementById('mobile-theme-label');
+
+        if (day) {
+          body.classList.remove('bg-[#0D0F12]', 'text-zinc-100');
+          body.classList.add('bg-[#F4F5F7]', 'text-zinc-900');
+
+          veil.className =
+            'absolute inset-0 bg-gradient-to-b from-[#F4F5F7]/85 via-[#F4F5F7]/88 to-[#F4F5F7]/94 transition-colors duration-500';
+          grid.className = 'absolute inset-0 bg-architectural-grid-day opacity-60';
+          if (heroGlow) heroGlow.classList.add('hidden');
+
+          document.querySelectorAll('.slide-img').forEach((img) => {
+            img.classList.remove('opacity-30');
+            img.classList.add('opacity-20');
+          });
+
+          sunIcon.classList.add('hidden');
+          sunIcon.classList.remove('inline-flex');
+          moonIcon.classList.remove('hidden');
+          moonIcon.classList.add('inline-flex');
+          if (mobileThemeLabel) mobileThemeLabel.textContent = 'Night Mode';
+        } else {
+          body.classList.remove('bg-[#F4F5F7]', 'text-zinc-900');
+          body.classList.add('bg-[#0D0F12]', 'text-zinc-100');
+
+          veil.className =
+            'absolute inset-0 bg-gradient-to-b from-[#0B0D10]/80 via-[#0D0F12]/85 to-[#0D0F12]/94 transition-colors duration-500';
+          grid.className = 'absolute inset-0 bg-architectural-grid opacity-45';
+          if (heroGlow) heroGlow.classList.remove('hidden');
+
+          document.querySelectorAll('.slide-img').forEach((img) => {
+            img.classList.remove('opacity-20');
+            img.classList.add('opacity-30');
+          });
+
+          sunIcon.classList.remove('hidden');
+          sunIcon.classList.add('inline-flex');
+          moonIcon.classList.add('hidden');
+          moonIcon.classList.remove('inline-flex');
+          if (mobileThemeLabel) mobileThemeLabel.textContent = 'Day Mode';
+        }
+
+        // Update Brand Text
+        document.querySelectorAll('.brand-tres').forEach((el) => {
+          el.classList.toggle('text-zinc-900', day);
+          el.classList.toggle('text-white', !day);
+        });
+        document.querySelectorAll('.brand-sub').forEach((el) => {
+          el.classList.toggle('text-zinc-600', day);
+          el.classList.toggle('text-zinc-400', !day);
+        });
+
+        // Update Nav Links & Header Phone
+        document.querySelectorAll('.nav-link').forEach((el) => {
+          el.classList.toggle('text-zinc-700', day);
+          el.classList.toggle('hover:text-orange-600', day);
+          el.classList.toggle('text-zinc-300', !day);
+          el.classList.toggle('hover:text-orange-400', !day);
+        });
+        document.querySelectorAll('.header-phone').forEach((el) => {
+          el.classList.toggle('text-zinc-700', day);
+          el.classList.toggle('hover:text-orange-600', day);
+          el.classList.toggle('text-zinc-300', !day);
+          el.classList.toggle('hover:text-white', !day);
+        });
+
+        // Update Sections
+        document.querySelectorAll('.section-alt').forEach((el) => {
+          el.classList.toggle('bg-white/85', day);
+          el.classList.toggle('border-zinc-200', day);
+          el.classList.toggle('bg-[#111317]/82', !day);
+          el.classList.toggle('border-zinc-800/70', !day);
+        });
+        document.querySelectorAll('.section-main').forEach((el) => {
+          el.classList.toggle('bg-[#F4F5F7]/85', day);
+          el.classList.toggle('border-zinc-200', day);
+          el.classList.toggle('bg-[#0D0F12]/82', !day);
+          el.classList.toggle('border-zinc-800/80', !day);
+        });
+        document.querySelectorAll('.section-expertise').forEach((el) => {
+          el.classList.toggle('bg-white/75', day);
+          el.classList.toggle('border-zinc-200', day);
+          el.classList.toggle('bg-[#0D0F12]/70', !day);
+          el.classList.toggle('border-zinc-800', !day);
+        });
+
+        // Update Typography Classes
+        document.querySelectorAll('.heading-primary').forEach((el) => {
+          el.classList.toggle('text-zinc-900', day);
+          el.classList.toggle('text-white', !day);
+        });
+        document.querySelectorAll('.text-primary').forEach((el) => {
+          el.classList.toggle('text-zinc-800', day);
+          el.classList.toggle('text-zinc-200', !day);
+        });
+        document.querySelectorAll('.text-body').forEach((el) => {
+          el.classList.toggle('text-zinc-700', day);
+          el.classList.toggle('text-zinc-300', !day);
+        });
+        document.querySelectorAll('.text-muted').forEach((el) => {
+          el.classList.toggle('text-zinc-600', day);
+          el.classList.toggle('text-zinc-400', !day);
+        });
+
+        // Update Cards & Surfaces
+        document.querySelectorAll('.surface-card').forEach((el) => {
+          el.classList.toggle('bg-white', day);
+          el.classList.toggle('border-zinc-200', day);
+          el.classList.toggle('divide-zinc-200', day);
+          el.classList.toggle('bg-[#14171D]', !day);
+          el.classList.toggle('border-zinc-800', !day);
+          el.classList.toggle('divide-zinc-800/90', !day);
+        });
+        document.querySelectorAll('.surface-subcard').forEach((el) => {
+          el.classList.toggle('bg-[#F8FAFC]', day);
+          el.classList.toggle('border-zinc-200', day);
+          el.classList.toggle('bg-[#161920]/95', !day);
+          el.classList.toggle('border-zinc-800', !day);
+        });
+        document.querySelectorAll('.surface-pill').forEach((el) => {
+          el.classList.toggle('bg-white/90', day);
+          el.classList.toggle('border-zinc-300', day);
+          el.classList.toggle('bg-zinc-900/90', !day);
+          el.classList.toggle('border-zinc-700/80', !day);
+        });
+        document.querySelectorAll('.surface-node').forEach((el) => {
+          el.classList.toggle('bg-white', day);
+          el.classList.toggle('bg-[#161920]', !day);
+        });
+        document.querySelectorAll('.surface-icon').forEach((el) => {
+          el.classList.toggle('bg-white', day);
+          el.classList.toggle('border-zinc-200', day);
+          el.classList.toggle('bg-zinc-900', !day);
+          el.classList.toggle('border-zinc-700/80', !day);
+        });
+
+        // Update Service Pills
+        document.querySelectorAll('.service-pill').forEach((el) => {
+          el.classList.toggle('bg-[#F8FAFC]', day);
+          el.classList.toggle('text-zinc-800', day);
+          el.classList.toggle('border-zinc-200', day);
+          el.classList.toggle('bg-[#0E1015]', !day);
+          el.classList.toggle('text-zinc-200', !day);
+          el.classList.toggle('border-zinc-800', !day);
+        });
+
+        // Update Form Inputs & Labels
+        document.querySelectorAll('.form-label').forEach((el) => {
+          el.classList.toggle('text-zinc-700', day);
+          el.classList.toggle('text-zinc-300', !day);
+        });
+        document.querySelectorAll('.form-input').forEach((el) => {
+          el.classList.toggle('bg-white', day);
+          el.classList.toggle('border-zinc-300', day);
+          el.classList.toggle('text-zinc-900', day);
+          el.classList.toggle('bg-[#0E1015]', !day);
+          el.classList.toggle('border-zinc-700', !day);
+          el.classList.toggle('text-white', !day);
+        });
+
+        // Update Buttons
+        document.querySelectorAll('.btn-secondary').forEach((el) => {
+          el.classList.toggle('bg-white/90', day);
+          el.classList.toggle('text-zinc-900', day);
+          el.classList.toggle('border-zinc-300', day);
+          el.classList.toggle('bg-zinc-900/80', !day);
+          el.classList.toggle('text-white', !day);
+          el.classList.toggle('border-zinc-600', !day);
+        });
+
+        // Update Mobile Drawer
+        const drawer = document.getElementById('mobile-drawer');
+        drawer.classList.toggle('bg-white/98', day);
+        drawer.classList.toggle('text-zinc-900', day);
+        drawer.classList.toggle('bg-[#0B0D10]/98', !day);
+        drawer.classList.toggle('text-white', !day);
+
+        document.querySelectorAll('.mobile-nav-link').forEach((el) => {
+          if (!el.classList.contains('bg-gradient-to-r')) {
+            el.classList.toggle('text-zinc-800', day);
+            el.classList.toggle('border-zinc-200', day);
+            el.classList.toggle('text-zinc-200', !day);
+            el.classList.toggle('border-zinc-800/60', !day);
+          }
+        });
+
+        goToSlide(currentSlide);
+        updateHeaderOnScroll();
+      }
+
+      document.getElementById('theme-toggle-btn').addEventListener('click', () => {
+        applyTheme(!isDayMode);
+      });
+      document.getElementById('mobile-theme-toggle').addEventListener('click', () => {
+        applyTheme(!isDayMode);
+      });
+
+      // ----------------------------------------------------------------------
+      // SCROLL TRACKER (HEADER STATE, PROGRESS BAR & BACK TO TOP)
+      // ----------------------------------------------------------------------
+      const header = document.getElementById('main-header');
+      const progressBar = document.getElementById('scroll-progress-bar');
+      const backToTopBtn = document.getElementById('back-to-top-btn');
+
+      function updateHeaderOnScroll() {
+        const scrollY = window.scrollY;
+        const scrolled = scrollY > 50;
+
+        if (scrolled) {
+          header.className = isDayMode
+            ? 'fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-white/95 backdrop-blur-md border-b border-zinc-200 py-3.5 shadow-lg shadow-zinc-900/5'
+            : 'fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-[#0D0F12]/95 backdrop-blur-md border-b border-zinc-800/80 py-3.5 shadow-2xl shadow-black/50';
+        } else {
+          header.className = isDayMode
+            ? 'fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-gradient-to-b from-white/95 via-white/80 to-transparent py-6'
+            : 'fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-gradient-to-b from-black/80 via-black/40 to-transparent py-6';
+        }
+
+        if (scrollY > 600) {
+          backToTopBtn.classList.remove('opacity-0', 'translate-y-3', 'pointer-events-none');
+          backToTopBtn.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+        } else {
+          backToTopBtn.classList.add('opacity-0', 'translate-y-3', 'pointer-events-none');
+          backToTopBtn.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+        }
+
+        const docHeight =
+          document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const pct = docHeight > 0 ? Math.min(100, Math.max(0, (scrollY / docHeight) * 100)) : 0;
+        progressBar.style.width = `${pct}%`;
+      }
+
+      window.addEventListener('scroll', updateHeaderOnScroll, { passive: true });
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // ----------------------------------------------------------------------
+      // MOBILE MENU DRAWER
+      // ----------------------------------------------------------------------
+      const mobileDrawer = document.getElementById('mobile-drawer');
+      document.getElementById('mobile-menu-open').addEventListener('click', () => {
+        mobileDrawer.classList.remove('opacity-0', 'pointer-events-none', '-translate-y-4');
+        mobileDrawer.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+        mobileDrawer.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      });
+
+      function closeMobileDrawer() {
+        mobileDrawer.classList.add('opacity-0', 'pointer-events-none', '-translate-y-4');
+        mobileDrawer.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+        mobileDrawer.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      document.getElementById('mobile-menu-close').addEventListener('click', closeMobileDrawer);
+      document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+        link.addEventListener('click', closeMobileDrawer);
+      });
+
+      // ----------------------------------------------------------------------
+      // QUOTE FORM VALIDATION & SUBMISSION
+      // ----------------------------------------------------------------------
+      const quoteForm = document.getElementById('quote-form');
+      const successPanel = document.getElementById('quote-success-panel');
+      let lastSubmittedData = null;
+
+      function setFieldError(field, message) {
+        const errEl = document.getElementById(`err-${field}`);
+        if (!errEl) return;
+        if (message) {
+          errEl.textContent = message;
+          errEl.classList.remove('hidden');
+        } else {
+          errEl.textContent = '';
+          errEl.classList.add('hidden');
+        }
+      }
+
+      quoteForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const data = {
+          fullName: document.getElementById('fullName').value.trim(),
+          companyName: document.getElementById('companyName').value.trim(),
+          email: document.getElementById('email').value.trim(),
+          contactNumber: document.getElementById('contactNumber').value.trim(),
+          serviceRequired: document.getElementById('serviceRequired').value,
+          projectLocation: document.getElementById('projectLocation').value.trim(),
+          estimatedBudget: document.getElementById('estimatedBudget').value.trim(),
+          projectDescription: document.getElementById('projectDescription').value.trim(),
+        };
+
+        let valid = true;
+        setFieldError('fullName', '');
+        setFieldError('email', '');
+        setFieldError('contactNumber', '');
+        setFieldError('projectLocation', '');
+        setFieldError('projectDescription', '');
+
+        if (!data.fullName) {
+          setFieldError('fullName', 'Please enter your full name.');
+          valid = false;
+        }
+        if (!data.email) {
+          setFieldError('email', 'Please enter your email address.');
+          valid = false;
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
+          setFieldError('email', 'Please provide a valid email address.');
+          valid = false;
+        }
+        if (!data.contactNumber) {
+          setFieldError('contactNumber', 'Please enter your contact number.');
+          valid = false;
+        }
+        if (!data.projectLocation) {
+          setFieldError('projectLocation', 'Please specify the project location.');
+          valid = false;
+        }
+        if (!data.projectDescription) {
+          setFieldError('projectDescription', 'Please briefly describe your project scope.');
+          valid = false;
+        }
+
+        if (!valid) return;
+
+        const submitBtn = document.getElementById('submit-quote-btn');
+        const submitLabel = document.getElementById('submit-quote-label');
+        submitBtn.disabled = true;
+        submitLabel.textContent = 'SUBMITTING ENQUIRY...';
+
+        setTimeout(() => {
+          lastSubmittedData = data;
+          submitBtn.disabled = false;
+          submitLabel.textContent = 'SUBMIT PROJECT ENQUIRY';
+
+          document.getElementById('quote-success-summary').innerHTML = `
+            Thank you, <strong>${data.fullName}</strong>. Your enquiry for
+            <strong class="text-orange-500">${data.serviceRequired}</strong> has been logged.
+            You can also send a direct copy via email or WhatsApp below for immediate dispatch.
+          `;
+
+          const waText = `Hello TreS Corp, my name is ${data.fullName}. I submitted an enquiry for ${data.serviceRequired} in ${data.projectLocation}. Details: ${data.projectDescription}`;
+          document.getElementById('forward-whatsapp-btn').href = `https://wa.me/27725775979?text=${encodeURIComponent(waText)}`;
+
+          quoteForm.classList.add('hidden');
+          successPanel.classList.remove('hidden');
+        }, 650);
+      });
+
+      document.getElementById('send-email-client-btn').addEventListener('click', () => {
+        if (!lastSubmittedData) return;
+        const d = lastSubmittedData;
+        const subject = encodeURIComponent(`Project Quote Request — ${d.serviceRequired} (${d.fullName})`);
+        const body = encodeURIComponent(
+          `Full Name: ${d.fullName}\n` +
+            `Company: ${d.companyName || 'N/A'}\n` +
+            `Email: ${d.email}\n` +
+            `Contact Number: ${d.contactNumber}\n` +
+            `Service Required: ${d.serviceRequired}\n` +
+            `Project Location: ${d.projectLocation}\n` +
+            `Estimated Budget: ${d.estimatedBudget || 'Not specified'}\n\n` +
+            `Project Description:\n${d.projectDescription}`
+        );
+        window.location.href = `mailto:info.trescorp@gmail.com?subject=${subject}&body=${body}`;
+      });
+
+      document.getElementById('new-enquiry-btn').addEventListener('click', () => {
+        quoteForm.reset();
+        successPanel.classList.add('hidden');
+        quoteForm.classList.remove('hidden');
+      });
+
+      // ----------------------------------------------------------------------
+      // SCROLL REVEAL OBSERVER & INITIAL LOADING SEQUENCE
+      // ----------------------------------------------------------------------
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+      document.querySelectorAll('.reveal-section').forEach((el) => revealObserver.observe(el));
+
+      // Dynamic Year
+      const yearEl = document.getElementById('copyright-year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      // Render Lucide Icons
+      if (window.lucide) window.lucide.createIcons();
+
+      // Dismiss Loading Screen Smoothly
+      const loadingScreen = document.getElementById('loading-screen');
+      const loadProgressBar = document.getElementById('load-progress-bar');
+      let prog = 25;
+      const loadTimer = setInterval(() => {
+        prog = Math.min(100, prog + 25);
+        if (loadProgressBar) loadProgressBar.style.width = `${prog}%`;
+        if (prog >= 100) clearInterval(loadTimer);
+      }, 130);
+
+      setTimeout(() => {
+        if (loadingScreen) {
+          loadingScreen.classList.add('opacity-0', 'pointer-events-none');
+          setTimeout(() => loadingScreen.remove(), 500);
+        }
+      }, 750);
+    })();
+  </script>
+</body>
+</html>
